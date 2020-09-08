@@ -8,6 +8,11 @@ module.exports = {
     "filename": "bundle.js"
   },
   "devtool": "source-map",
+  "devServer": {
+    host: '192.168.178.37',
+    port: 8080,
+    disableHostCheck: true,
+  },
   "module": {
     "rules": [
       {
