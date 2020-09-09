@@ -11,19 +11,16 @@ const Topbar = () => {
 
   const handleMenuToggle = ( e ) => {
     e.stopPropagation();
-    console.log( 'asdf' );
+    document.getElementById( 'mobile-top-bar' ).classList.toggle( 'change' );
     setMenuExpanded( !menuExpanded );
   }
 
   return (
     <nav id='mobile-top-bar'>
       <HomeButton />
-      {menuExpanded &&
-        <AboutButton />}
-      {menuExpanded &&
-        <ProjectsButton />}
-      {menuExpanded &&
-        <ContactButton />}      
+      <AboutButton />
+      <ProjectsButton />
+      <ContactButton />
       <Hamburger menuExpanded={menuExpanded} handleClick={handleMenuToggle} />
     </nav>
   );

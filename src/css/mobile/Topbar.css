@@ -6,3 +6,15 @@
   justify-content: space-between;
   padding: 0 10px;
 }
+
+.change .hidden-menu-item {
+  opacity: 100;
+  visibility: visible;
+}
+
+.hidden-menu-item {
+  transition-duration: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: visible;
+}

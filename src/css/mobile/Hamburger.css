@@ -11,3 +11,19 @@
   margin: 3px 0;
   border-radius: 1.5px;
 }
+
+#bar1, #bar2, #bar3 {
+  transition-duration: 0.3s;
+}
+
+.change #bar1 {
+  transform: translate(0, 10px) rotate(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translate(0, -10px) rotate(45deg);
+}
