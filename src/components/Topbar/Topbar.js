@@ -4,7 +4,7 @@ import HomeButton from './HomeButton';
 import AboutButton from './AboutButton';
 import ProjectsButton from './ProjectsButton';
 import ContactButton from './ContactButton';
-import '../css/mobile/Topbar.css';
+import '../../css/mobile/Topbar.css';
 
 const Topbar = () => {
   const [ menuExpanded, setMenuExpanded ] = useState( false );
