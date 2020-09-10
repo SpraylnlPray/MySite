@@ -5,13 +5,15 @@ module.exports = {
   "entry": "./src/index.js",
   "output": {
     "path": __dirname + '/dir',
-    "filename": "bundle.js"
+    "filename": "bundle.js",
+    "publicPath": '/'
   },
   "devtool": "source-map",
   "devServer": {
     host: '192.168.178.37',
     port: 8080,
     disableHostCheck: true,
+    historyApiFallback: true,
   },
   "module": {
     "rules": [

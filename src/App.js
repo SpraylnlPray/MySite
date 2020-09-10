@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import Home from './components/Routes/Home';
 import About from './components/Routes/About';
 import Projects from './components/Routes/Projects';
+import Experience from './components/Routes/Experience';
 import Contact from './components/Routes/Contact';
 import './css/mobile/App.css';
 import './css/pc/App.css';
@@ -18,6 +19,7 @@ function App() {
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />
           <Route path='/projects' component={Projects} />
+          <Route path='/experience' component={Experience} />
           <Route path='/contact' component={Contact} />
         </Switch>
       </div>

@@ -3,6 +3,7 @@ import Hamburger from './Hamburger';
 import HomeButton from './HomeButton';
 import AboutButton from './AboutButton';
 import ProjectsButton from './ProjectsButton';
+import ExperienceButton from './ExperienceButton';
 import ContactButton from './ContactButton';
 import '../../css/mobile/Topbar.css';
 
@@ -20,6 +21,7 @@ const Topbar = () => {
       <HomeButton />
       <AboutButton />
       <ProjectsButton />
+      <ExperienceButton />
       <ContactButton />
       <Hamburger menuExpanded={menuExpanded} handleClick={handleMenuToggle} />
     </nav>
