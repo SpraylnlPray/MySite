@@ -1,0 +1,45 @@
+#mobile-experience-container {
+  padding-top: 20vh;
+  overflow: auto;
+  margin: auto 10px;
+  height: calc(80vh - 55px);
+}
+
+.mobile-job-container {
+  color: #E8E8E8;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+}
+
+/* This class gets added to every 2nd job-container */
+.flex-dir-rev {
+  flex-direction: row-reverse;
+}
+
+.mobile-job-container:not(:nth-child(1)) {
+  margin-top: 25px;
+}
+
+.mobile-job-image {
+  width: 70px;
+  max-height: 120px;
+}
+
+.mobile-job-content {
+  padding-left: 7px;
+}
+
+.mobile-job-duration {
+  font-size: .6cm;
+  font-weight: 1000;
+  letter-spacing: -.01cm;
+}
+
+.mobile-job-header {
+  margin-top: 5px;
+}
+
+.mobile-job-description {
+  margin-top: 3px;
+  font-size: .4cm;
+}

@@ -10,7 +10,7 @@
   font-weight: 1000;
 }
 
-#mobile-list {
+.mobile-list {
   font-size: 16px;
   list-style-position: inside;
   padding-left: 5px;

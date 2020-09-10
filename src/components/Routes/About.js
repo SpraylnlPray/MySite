@@ -9,7 +9,7 @@ const About = () => {
         <div className='mobile-about-header'>
           Facts
         </div>
-        <ul id='mobile-list'>
+        <ul className='mobile-list'>
           <li>23 years old</li>
           <li>Passionate Learner</li>
           <li><GoLocation size={12} color={'#E8E8E8'}/> Bavaria, Germany</li>
@@ -20,7 +20,7 @@ const About = () => {
         <div className='mobile-about-header'>
           Hobbies
         </div>
-        <ul id='mobile-list' >
+        <ul className='mobile-list'>
           <li>Hiking</li>
           <li>Playing Piano</li>
           <li>Mountainbiking</li>
