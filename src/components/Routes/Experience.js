@@ -4,12 +4,10 @@ import jobs from '../../static/Jobs';
 
 const Experience = () => {
 
-  const jobElements = jobs.map( ( job, i ) => {
-    let containerClasses = 'mobile-job-container';
-    if ( ( i + 1 ) % 2 === 0 ) containerClasses += ' flex-dir-rev';
+  const jobElements = jobs.map( job => {
     return (
-      <div key={job.key} className={containerClasses}>
-        <img src={job.imagePath} className='mobile-job-image' alt='image of the company' />
+      <div key={job.key} className='mobile-job-container'>
+        <img src={job.imagePath} className='mobile-job-image' alt={`Logo of ${ job.companyName }`} />
         <div className='mobile-job-content'>
           <div className='mobile-job-duration'>
             {job.start} - {job.end}
@@ -27,7 +25,10 @@ const Experience = () => {
 
   return (
     <div id='mobile-experience-container'>
-      {jobElements}
+      <div id='mobile-experience-header'>Experience</div>
+      <div id='mobile-job-list'>
+        {jobElements}
+      </div>
     </div>
   );
 }

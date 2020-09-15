@@ -1,61 +1,46 @@
 const HtmlWebPackkPlugin = require( 'html-webpack-plugin' );
+const path = require( 'path' );
+const webpack = require( 'webpack' );
+const dotenv = require( 'dotenv' );
+
+const env = dotenv.config().parsed;
+const envKeys = Object.keys( env ).reduce( ( prev, next ) => {
+  prev[ `process.env.${ next }` ] = JSON.stringify( env[ next ] );
+  return prev;
+}, {} );
 
 module.exports = {
-  "mode": "development",
-  "entry": "./src/index.js",
-  "output": {
-    "path": __dirname + '/dir',
-    "filename": "bundle.js",
-    "publicPath": '/'
+  entry: './src/index.js',
+  output: {
+    path: path.join( __dirname, '/dir' ),
+    filename: 'bundle.js',
+    publicPath: '/'
   },
-  "devtool": "source-map",
-  "devServer": {
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader'
+      },
+      {
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader' ]
+      },
+    ]
+  },
+  devtool: 'source-map',
+  devServer: {
     host: '192.168.178.37',
     port: 8080,
     disableHostCheck: true,
     historyApiFallback: true,
   },
-  "module": {
-    "rules": [
-      {
-        "enforce": "pre",
-        "test": /\.js$/,
-        "exclude": /node_modules/,
-        "loader": "eslint-loader",
-        "options": {
-          "emitWarning": true,
-          "failOnoError": false,
-          "failOnWarning": false
-        }
-      },
-      {
-        "test": /\.(js|jsx)$/,
-        "exclude": /node_modules/,
-        "use": {
-          "loader": "babel-loader"
-        }
-      },
-      {
-        "test": /\.css$/,
-        "use": [
-          "style-loader",
-          "css-loader"
-        ]
-      },
-      {
-        "test": /\.html$/,
-        "use": [
-          {
-            "loader": "html-loader"
-          }
-        ]
-      }
-    ]
-  },
-  "plugins": [
+  plugins: [
     new HtmlWebPackkPlugin( {
       template: "./src/index.html",
       filename: "./index.html"
-    } )
+    } ),
+    new webpack.DefinePlugin( envKeys ),
   ]
 }

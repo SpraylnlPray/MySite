@@ -1,0 +1,64 @@
+#mobile-contact-container {
+  color: #E8E8E8;
+  font-family: 'Courier New', Courier, monospace;
+  margin: auto 20px auto 20px;
+}
+
+#mobile-contact-header {
+  margin-top: 10vh;
+  font-size: 0.8cm;
+  font-weight: 800;
+  letter-spacing: -0.02cm;
+}
+
+#mobile-contact-form {
+  margin-top: 20px;
+}
+
+.mobile-form-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-form-input > label {
+  font-weight: 700;
+  font-size: 1.25em;
+}
+
+.mobile-form-input:not(:first-child) {
+  margin-top: 15px;
+}
+
+.mobile-form-input > input, .mobile-form-input > textarea {
+  transition-duration: 0.4s;
+  background-color: #314354;
+  color: #E8E8E8;
+  border: none;
+  line-height: 0.8cm;
+  font-size: 1.05em;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: -0.04cm;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.mobile-form-input > input {
+  width: 70%;
+}
+
+.mobile-form-input > input:focus, .mobile-form-input > textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #0085FC;
+}
+
+.mobile-form-input > input:invalid, .mobile-form-input > textarea:invalid {
+  outline: none;
+  border-bottom: 2px solid #D62727;
+}
+
+.mobile-form-input > textarea {
+  height: 80px;
+}

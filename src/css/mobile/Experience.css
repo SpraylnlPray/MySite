@@ -1,8 +1,24 @@
 #mobile-experience-container {
-  padding-top: 20vh;
+  padding-top: 7vh;
   overflow: auto;
   margin: auto 10px;
   height: calc(80vh - 55px);
+  color: #E8E8E8;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#mobile-experience-header {
+  font-size: 1.1cm;
+  font-weight: 1000;
+  letter-spacing: -0.02cm;
+}
+
+.mobile-job-container:first-child {
+  margin-top: 6vh;
+}
+
+.mobile-job-container:not(:first-child) {
+  margin-top: 25px;
 }
 
 .mobile-job-container {
@@ -11,13 +27,8 @@
   display: flex;
 }
 
-/* This class gets added to every 2nd job-container */
-.flex-dir-rev {
+.mobile-job-container:nth-child(2n) {
   flex-direction: row-reverse;
-}
-
-.mobile-job-container:not(:nth-child(1)) {
-  margin-top: 25px;
 }
 
 .mobile-job-image {
@@ -32,7 +43,7 @@
 .mobile-job-duration {
   font-size: .6cm;
   font-weight: 1000;
-  letter-spacing: -.01cm;
+  letter-spacing: -.02cm;
 }
 
 .mobile-job-header {
@@ -42,4 +53,6 @@
 .mobile-job-description {
   margin-top: 3px;
   font-size: .4cm;
+  color: #BFBFBF;
+  letter-spacing: -0.02cm;
 }
