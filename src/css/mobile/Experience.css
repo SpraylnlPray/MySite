@@ -13,6 +13,20 @@
   letter-spacing: -0.02cm;
 }
 
+.mobile-job-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-more-button {
+  font-size: .8em;
+  border: 1px solid #0085FC;
+  color: #2DB3FC;
+  padding: 3px 5px;
+  border-radius: 1.5px;
+}
+
 .mobile-job-container:first-child {
   margin-top: 6vh;
 }
@@ -52,7 +66,12 @@
   margin-top: 5px;
 }
 
+.show {
+  display: block !important;
+}
+
 .mobile-job-description {
+  display: none;
   margin-top: 3px;
   font-size: .4cm;
   color: #BFBFBF;

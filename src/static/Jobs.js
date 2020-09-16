@@ -6,7 +6,7 @@ const jobs = [
     companyName: 'CODESYS GmbH',
     location: 'Kempten Germany',
     position: 'Intern',
-    workload: '8h/week',
+    workload: '8h/Week',
     description: 'Architectural refactoring of an internal tool and porting it from Python to C#, as well as setting up various Raspberry-Pi for testing purposes',
     imagePath: '../../../icons/CODESYS-logo-standard.png',
   },
