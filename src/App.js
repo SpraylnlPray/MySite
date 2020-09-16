@@ -10,24 +10,41 @@ import './css/mobile/App.css';
 import './css/pc/App.css';
 import './css/App.css';
 
-function App() {
-  return (
-    <div id='container'>
-      <div id='mobile-container'>
-        <Topbar />
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/about' component={About} />
-          <Route path='/projects' component={Projects} />
-          <Route path='/experience' component={Experience} />
-          <Route path='/contact' component={Contact} />
-        </Switch>
+class App extends React.Component {
+  constructor( props ) {
+    super( props );
+  }
+
+  componentDidMount() {
+    this.setWindowSize();
+  }
+
+  setWindowSize() {
+    const w = Math.max( document.documentElement.clientWidth, window.innerWidth || 0 );
+    const h = Math.max( document.documentElement.clientHeight, window.innerHeight || 0 );
+    document.getElementById( 'root' ).style.height = h.toString() + 'px';
+    document.getElementById( 'root' ).style.width = w.toString() + 'px';
+  }
+
+  render() {
+    return (
+      <div id='container'>
+        <div id='mobile-container'>
+          <Topbar />
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='/about' component={About} />
+            <Route path='/projects' component={Projects} />
+            <Route path='/experience' component={Experience} />
+            <Route path='/contact' component={Contact} />
+          </Switch>
+        </div>
+        <div id='pc-container'>
+          hello pc
+        </div>
       </div>
-      <div id='pc-container'>
-        hello pc
-      </div>
-    </div>
-  )
+    )
+  }
 }
 
 
