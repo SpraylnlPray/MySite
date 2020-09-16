@@ -7,7 +7,9 @@ const Experience = () => {
   const jobElements = jobs.map( job => {
     return (
       <div key={job.key} className='mobile-job-container'>
-        <img src={job.imagePath} className='mobile-job-image' alt={`Logo of ${ job.companyName }`} />
+        <div className='mobile-job-image-container'>
+          <img src={job.imagePath} className='mobile-job-image' alt={`Logo of ${ job.companyName }`} />
+        </div>
         <div className='mobile-job-content'>
           <div className='mobile-job-duration'>
             {job.start} - {job.end}

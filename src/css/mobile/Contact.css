@@ -62,3 +62,48 @@
 .mobile-form-input > textarea {
   height: 80px;
 }
+
+#mobile-send-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#mobile-send-button {
+  transition: 0.25s;
+  outline: none;
+  background-color: #1B1F24;
+  border: 1px solid #0085FC;
+  color: #2DB3FC;
+  text-decoration: none;
+  border-radius: 1.5px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: -1px;
+  padding: 12px 18px;
+}
+
+#mobile-send-button:active {
+  background-color: #4576AD;
+}
+
+.mobile-info-message {
+  font-size: 20px;
+  padding: 12px 18px;
+  border-radius: 1.5px;
+}
+
+#mobile-error {
+  border: 1px solid #D62727;
+}
+
+#mobile-success {
+  border: 1px solid #228B22;
+}
+
+#mobile-loading {
+  border: 1px solid #0085FC;
+}

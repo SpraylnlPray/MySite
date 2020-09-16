@@ -8,7 +8,7 @@ const jobs = [
     position: 'Intern',
     workload: '8h/week',
     description: 'Architectural refactoring of an internal tool and porting it from Python to C#, as well as setting up various Raspberry-Pi for testing purposes',
-    imagePath: '../../../images/CodesysLogo.svg',
+    imagePath: '../../../icons/CODESYS-logo-standard.png',
   },
   {
     key: 'ioet',
@@ -19,7 +19,7 @@ const jobs = [
     position: 'Intern',
     workload: 'Fulltime',
     description: 'Backend Development in Python 3, implemented an algorithm that solves a spacial allocation problem and deployed it to an AWS lambda function',
-    imagePath: '../../../images/ioetLogo4x6.png',
+    imagePath: '../../../icons/ioetLogo4x6.png',
   },
 ]
 
