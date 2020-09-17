@@ -7,12 +7,12 @@
   padding: 0 10px;
 }
 
-.change .hidden-menu-item {
+#mobile-top-bar.change .menu-item  {
   opacity: 100;
   visibility: visible;
 }
 
-.hidden-menu-item {
+#mobile-top-bar .menu-item {
   transition-duration: 0.3s;
   opacity: 0;
   visibility: hidden;

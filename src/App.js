@@ -1,5 +1,6 @@
 import React from 'react';
 import Topbar from './components/Topbar/Topbar';
+import Sidebar from './components/Sidebar/Sidebar';
 import { Route, Switch } from 'react-router-dom';
 import Home from './components/Routes/Home';
 import About from './components/Routes/About';
@@ -36,7 +37,7 @@ class App extends React.Component {
           </Switch>
         </div>
         <div id='pc-container'>
-          hello pc
+          <Sidebar/>
         </div>
       </div>
     )

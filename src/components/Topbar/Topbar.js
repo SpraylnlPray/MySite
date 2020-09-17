@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import Hamburger from './Hamburger';
-import HomeButton from './HomeButton';
-import AboutButton from './AboutButton';
-import ProjectsButton from './ProjectsButton';
-import ExperienceButton from './ExperienceButton';
-import ContactButton from './ContactButton';
+import HomeButton from '../Buttons/HomeButton';
+import AboutButton from '../Buttons/AboutButton';
+import ProjectsButton from '../Buttons/ProjectsButton';
+import ExperienceButton from '../Buttons/ExperienceButton';
+import ContactButton from '../Buttons/ContactButton';
 import '../../css/mobile/Topbar.css';
 
 const Topbar = () => {
@@ -25,11 +25,11 @@ const Topbar = () => {
 
   return (
     <nav id='mobile-top-bar'>
-      <HomeButton name='home' onClick={handleClick} active={activeItem === 'home'} />
-      <AboutButton name='about' onClick={handleClick} active={activeItem === 'about'} />
-      <ProjectsButton name='projects' onClick={handleClick} active={activeItem === 'projects'} />
-      <ExperienceButton name='experience' onClick={handleClick} active={activeItem === 'experience'} />
-      <ContactButton name='contact' onClick={handleClick} active={activeItem === 'contact'} />
+      <HomeButton name='home' onClick={handleClick} active={activeItem === 'home'} size={30} />
+      <AboutButton name='about' onClick={handleClick} active={activeItem === 'about'} size={30} />
+      <ProjectsButton name='projects' onClick={handleClick} active={activeItem === 'projects'} size={30} />
+      <ExperienceButton name='experience' onClick={handleClick} active={activeItem === 'experience'} size={30} />
+      <ContactButton name='contact' onClick={handleClick} active={activeItem === 'contact'} size={30} />
       <Hamburger menuExpanded={menuExpanded} handleClick={handleMenuToggle} />
     </nav>
   );
