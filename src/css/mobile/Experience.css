@@ -38,6 +38,10 @@
   display: flex;
 }
 
+.mobile-job-container:not(:first-child) {
+  margin-top: 15px;
+}
+
 .mobile-job-container:nth-child(2n) {
   flex-direction: row-reverse;
 }
