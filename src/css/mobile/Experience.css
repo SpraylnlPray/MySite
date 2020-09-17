@@ -1,16 +1,21 @@
 #mobile-experience-container {
-  padding-top: 7vh;
-  overflow: auto;
+  position: absolute;
+  top: 15vh;
   margin: auto 10px;
-  height: calc(80vh - 55px);
   color: #E8E8E8;
   font-family: 'Courier New', Courier, monospace;
 }
 
 #mobile-experience-header {
-  font-size: 1.1cm;
+  font-size: 2.2em;
   font-weight: 1000;
   letter-spacing: -0.02cm;
+}
+
+#mobile-job-list {
+  margin-top: 4vh;
+  overflow: auto;
+  height: calc(100vh - 2.2em - 15vh - 23vh);
 }
 
 .mobile-job-image-container {
@@ -25,14 +30,6 @@
   color: #2DB3FC;
   padding: 3px 5px;
   border-radius: 1.5px;
-}
-
-.mobile-job-container:first-child {
-  margin-top: 6vh;
-}
-
-.mobile-job-container:not(:first-child) {
-  margin-top: 25px;
 }
 
 .mobile-job-container {

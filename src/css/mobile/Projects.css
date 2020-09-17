@@ -1,20 +1,26 @@
 #mobile-projects-container {
   color: #E8E8E8;
-  overflow: auto;
-  height: calc(80vh - 55px);
+  position: absolute;
+  top: 15vh;
   font-family: 'Courier New', Courier, monospace;
-  margin: auto 20px auto 20px;
+  margin: auto 10px;
 }
 
 #mobile-projects-header {
-  margin-top: 15vh;
-  font-size: 0.8cm;
+  font-size: 2.2em;
   font-weight: 800;
   letter-spacing: -0.02cm;
 }
 
+#mobile-projects-list {
+  margin-top: 4vh;
+  overflow: auto;
+  height: calc(100vh - 2.2em - 15vh - 23vh);
+}
+
 #mobile-projects-caption, .mobile-project-description, .mobile-project-container a {
-  font-size: 0.7em;
+  font-size: 0.75em;
+  line-height: 1.05em;
 }
 
 #mobile-projects-caption a, .mobile-project-container a {
@@ -25,8 +31,24 @@
   color: #E8E8E8;
 }
 
-.mobile-project-container {
-  margin-top: 25px;
+.mobile-project-container:not(:first-child) {
+  margin-top: 15px;
+}
+
+.mobile-project-top-container {
+  display: flex;
+  align-items: bottom;
+}
+
+.mobile-project-more-button {
+  font-size: .8em;
+  border: 1px solid #0085FC;
+  color: #2DB3FC;
+  padding: 3px 5px;
+  border-radius: 1.5px;
+  height: 1em;
+  margin-top: 4px;
+  margin-left: 7px;
 }
 
 .mobile-project-title {
@@ -41,4 +63,6 @@
 
 .mobile-project-description {
   margin-top: .25em;
+  display: none;
+  letter-spacing: -0.02cm;
 }

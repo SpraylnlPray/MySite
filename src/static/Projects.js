@@ -1,5 +1,23 @@
 const projects = [
   {
+    key: 'yc-course',
+    title: 'YelpCamp',
+    sub: '7th Semester, Udemy Course',
+    description: 'This website was the result of a course on Udemy that introduced me to web development and tought me the basics of HTML, CSS and JavaScript. The site is a place to leave reviews on fictive camping sites. It has authentication and authorization and is connected to a mongo DB.',
+    source: 'https://young-fortress-00311.herokuapp.com/',
+    source_text: 'Link',
+    download: false,
+  },
+  {
+    key: 'nn-sem',
+    title: 'Backpropagation und -varianten',
+    sub: '6th Semester, Seminar Work',
+    description: 'In this paper I explain the idea behind backpropagation - the "magic" that makes neural networks learn - and also look at some variations of the basic implementation, that aim to fix some of its problems. (German only)',
+    source: '../../../PDF/Seminararbeit.pdf',
+    source_text: 'Download',
+    download: true,
+  },
+  {
     key: 'cc-game',
     title: 'Cybercell Game',
     sub: '4th Semester, Game Engineering Class',
@@ -8,24 +26,6 @@ const projects = [
     source_text: 'Video',
     download: false,
   },
-  {
-    key: 'nn-sem',
-    title: 'Backpropagation und -varianten',
-    sub: '6th Semester, Seminar Work',
-    description: 'In this paper I explain the idea behind backpropagation - the magic that makes neural networks learn - and also look at some variations of the basic implementation, that aim to fix some of its problems. (German only)',
-    source: '../../../PDF/Seminararbeit.pdf',
-    source_text: 'Download',
-    download: true,
-  },
-  {
-    key: 'yc-course',
-    title: 'YelpCamp',
-    sub: '7th Semester, Udemy Course',
-    description: 'This website was the result of a course on Udemy that introduced me to web development and tought me the basics of HTML, CSS and JavaScript. The site is a place to leave reviews on fictive camping sites. It has authentication and authorization and is connected to a mongo DB.',
-    source: 'https://young-fortress-00311.herokuapp.com/',
-    source_text: 'Link',
-    download: false,
-  }
 ];
 
 export default projects;
