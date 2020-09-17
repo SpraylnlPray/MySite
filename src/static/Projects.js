@@ -3,7 +3,7 @@ const projects = [
     key: 'yc-course',
     title: 'YelpCamp',
     sub: '7th Semester, Udemy Course',
-    description: 'This website was the result of a course on Udemy that introduced me to web development and tought me the basics of HTML, CSS and JavaScript. The site is a place to leave reviews on fictive camping sites. It has authentication and authorization and is connected to a mongo DB.',
+    description: 'This website is the result of a course on Udemy that introduced me to web development and tought me the basics of HTML, CSS and JavaScript. The site is a place to leave reviews on fictive camping sites. It has authentication and authorization and is connected to a mongo DB.',
     source: 'https://young-fortress-00311.herokuapp.com/',
     source_text: 'Link',
     download: false,

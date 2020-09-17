@@ -11,10 +11,6 @@ import './css/pc/App.css';
 import './css/App.css';
 
 class App extends React.Component {
-  constructor( props ) {
-    super( props );
-  }
-
   componentDidMount() {
     this.setWindowSize();
   }
