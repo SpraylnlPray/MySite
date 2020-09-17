@@ -1,6 +1,7 @@
 #mobile-projects-container {
   color: #E8E8E8;
   overflow: auto;
+  height: calc(80vh - 55px);
   font-family: 'Courier New', Courier, monospace;
   margin: auto 20px auto 20px;
 }
@@ -12,18 +13,32 @@
   letter-spacing: -0.02cm;
 }
 
-#mobile-projects-caption, .mobile-project-description {
+#mobile-projects-caption, .mobile-project-description, .mobile-project-container a {
   font-size: 0.7em;
 }
 
-#mobile-projects-caption a {
+#mobile-projects-caption a, .mobile-project-container a {
   color: #E8E8E8;
 }
 
-#mobile-projects-caption a:visited {
+#mobile-projects-caption a:visited, .mobile-project-container a:visited {
   color: #E8E8E8;
 }
 
 .mobile-project-container {
   margin-top: 25px;
+}
+
+.mobile-project-title {
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: -0.02cm;
+}
+
+.mobile-project-sub {
+  margin-top: .35em;
+}
+
+.mobile-project-description {
+  margin-top: .25em;
 }
