@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../css/mobile/Projects.css';
-import projects from '../../static/Projects';
+import '../../../css/mobile/Projects.css';
+import projects from '../../../static/Projects';
 
 const Projects = () => {
 

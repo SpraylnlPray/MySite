@@ -1,6 +1,6 @@
 import React from 'react';
 import { GoLocation } from 'react-icons/go';
-import '../../css/mobile/About.css';
+import '../../../css/mobile/About.css';
 
 const About = () => {
   return (

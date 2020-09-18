@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../css/mobile/Experience.css';
-import jobs from '../../static/Jobs';
+import '../../../css/mobile/Experience.css';
+import jobs from '../../../static/Jobs';
 
 const Experience = () => {
 

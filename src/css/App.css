@@ -11,3 +11,9 @@ body {
   color: green;
   background-color: green;;
 }
+
+#pc-container {
+  display: flex;
+  color: #E8E8E8;
+  font-family: 'Courier New', Courier, monospace;
+}

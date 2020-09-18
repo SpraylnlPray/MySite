@@ -1,6 +1,6 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-import '../../css/mobile/Contact.css';
+import '../../../css/mobile/Contact.css';
 
 class Contact extends React.Component {
   constructor( props ) {
