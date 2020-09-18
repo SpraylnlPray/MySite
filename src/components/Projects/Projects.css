@@ -1,0 +1,70 @@
+@media screen and (max-width: 751px) {
+  #projects-container {
+    color: #E8E8E8;
+    position: absolute;
+    top: 15vh;
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto 10px;
+  }
+  
+  #projects-header {
+    font-size: 2.2em;
+    font-weight: 800;
+    letter-spacing: -0.02cm;
+  }
+  
+  #projects-list {
+    margin-top: 4vh;
+    overflow: auto;
+    height: calc(100vh - 2.2em - 15vh - 23vh);
+  }
+  
+  #projects-caption, .project-description, .project-container a {
+    font-size: 0.75em;
+    line-height: 1.05em;
+  }
+  
+  #projects-caption a, .project-container a {
+    color: #E8E8E8;
+  }
+  
+  #projects-caption a:visited, .project-container a:visited {
+    color: #E8E8E8;
+  }
+  
+  .project-container:not(:first-child) {
+    margin-top: 15px;
+  }
+  
+  .project-top-container {
+    display: flex;
+    align-items: bottom;
+  }
+  
+  .project-more-button {
+    font-size: .8em;
+    border: 1px solid #0085FC;
+    color: #2DB3FC;
+    padding: 3px 5px;
+    border-radius: 1.5px;
+    height: 1em;
+    margin-top: 4px;
+    margin-left: 7px;
+  }
+  
+  .project-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: -0.02cm;
+  }
+  
+  .project-sub {
+    margin-top: .35em;
+  }
+  
+  .project-description {
+    margin-top: .25em;
+    display: none;
+    letter-spacing: -0.02cm;
+  }
+}

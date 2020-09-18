@@ -27,3 +27,9 @@
 .change #bar3 {
   transform: translate(0, -10px) rotate(45deg);
 }
+
+@media screen and (min-width: 751px) { 
+  #hamburger {
+    display: none;
+  }
+}

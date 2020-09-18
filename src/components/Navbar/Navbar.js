@@ -5,9 +5,9 @@ import AboutButton from '../Buttons/AboutButton';
 import ProjectsButton from '../Buttons/ProjectsButton';
 import ExperienceButton from '../Buttons/ExperienceButton';
 import ContactButton from '../Buttons/ContactButton';
-import '../../css/mobile/Topbar.css';
+import './Navbar.css';
 
-const Topbar = () => {
+const Navbar = () => {
   const [ menuExpanded, setMenuExpanded ] = useState( false );
   const pathName = window.location.pathname;
   const path = pathName === '/' ? 'home' : pathName.substr( 1 );
@@ -15,7 +15,7 @@ const Topbar = () => {
 
   const handleMenuToggle = ( e ) => {
     e.stopPropagation();
-    document.getElementById( 'mobile-top-bar' ).classList.toggle( 'change' );
+    document.getElementById( 'navbar' ).classList.toggle( 'change' );
     setMenuExpanded( !menuExpanded );
   }
 
@@ -24,7 +24,7 @@ const Topbar = () => {
   };
 
   return (
-    <nav id='mobile-top-bar'>
+    <nav id='navbar'>
       <HomeButton name='home' onClick={handleClick} active={activeItem === 'home'} size={30} />
       <AboutButton name='about' onClick={handleClick} active={activeItem === 'about'} size={30} />
       <ProjectsButton name='projects' onClick={handleClick} active={activeItem === 'projects'} size={30} />
@@ -35,4 +35,4 @@ const Topbar = () => {
   );
 }
 
-export default Topbar;
+export default Navbar;

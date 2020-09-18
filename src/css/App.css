@@ -5,6 +5,8 @@ body {
 #container {
   background-color: #1B1F24;
   height: 100%;
+  color: #E8E8E8;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .active-link-class {
@@ -12,8 +14,8 @@ body {
   background-color: green;;
 }
 
-#pc-container {
-  display: flex;
-  color: #E8E8E8;
-  font-family: 'Courier New', Courier, monospace;
+@media screen and (min-width: 751px) {
+  #container {
+    display: flex;
+  }
 }

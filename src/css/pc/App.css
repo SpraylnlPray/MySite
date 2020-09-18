@@ -1,9 +1,0 @@
-@media screen and (max-width: 751px) {
-  #pc-container {
-    display: none !important;
-  }
-}
-
-#pc-container {
-  height: 100%;
-}

@@ -1,6 +1,6 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-import '../../../css/mobile/Contact.css';
+import './Contact.css';
 
 class Contact extends React.Component {
   constructor( props ) {
@@ -87,35 +87,35 @@ class Contact extends React.Component {
   render() {
     const infoText = () => {
       if ( this.state.loading ) {
-        return <div className='mobile-info-message' id='mobile-loading'>Loading..</div>;
+        return <div className='info-message' id='loading'>Loading..</div>;
       }
       if ( this.state.success ) {
-        return <div className='mobile-info-message' id='mobile-success'>Success</div>;
+        return <div className='info-message' id='success'>Success</div>;
       }
       if ( this.state.errors ) {
-        return <div className='mobile-info-message' id='mobile-error'>Error</div>;
+        return <div className='info-message' id='error'>Error</div>;
       }
       return '';
     }
     return (
-      <div id='mobile-contact-container' >
-        <div id='mobile-contact-header'>Get in Touch</div>
-        <form id='mobile-contact-form'>
-          <div id='mobile-contact-name-container' className='mobile-form-input'>
+      <div id='contact-container' >
+        <div id='contact-header'>Get in Touch</div>
+        <form id='contact-form'>
+          <div id='contact-name-container' className='form-input'>
             <label htmlFor='from_name' required>Your Name</label>
             <input type='text' name='from_name' id='from_name' placeholder='Mr. Master Disaster' onChange={this.handleChange} value={this.state.from_name} />
           </div>
-          <div id='mobile-contact-from-container' className='mobile-form-input'>
+          <div id='contact-from-container' className='form-input'>
             <label htmlFor='reply_to' required>Your Email</label>
             <input type='email' name='reply_to' id='reply_to' placeholder='example@mail.com' onChange={this.handleChange} value={this.state.reply_to} />
           </div>
-          <div id='mobile-contact-message-container' className='mobile-form-input'>
+          <div id='contact-message-container' className='form-input'>
             <label htmlFor='message'>Your Message</label>
             <textarea id='message' name='message' placeholder='Hey there!' onChange={this.handleChange} value={this.state.message} />
           </div>
-          <div id='mobile-send-area'>
+          <div id='send-area'>
             <span>{infoText()}</span>
-            <button type='button' onClick={this.handleSubmit} id='mobile-send-button'>Send!</button>
+            <button type='button' onClick={this.handleSubmit} id='send-button'>Send!</button>
           </div>
         </form>
       </div>

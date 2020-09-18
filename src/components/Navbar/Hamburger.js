@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../css/mobile/Hamburger.css';
+import './Hamburger.css';
 import PropTypes from 'prop-types';
 
 const Hamburger = ( { handleClick } ) => {
