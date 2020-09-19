@@ -1,3 +1,101 @@
+.job-description {
+  display: none;
+}
+
+.more-button {
+  border: 1px solid #0085FC;
+  color: #2DB3FC;
+}
+
+@media screen and (min-width: 751px) {
+  #experience-container {
+    margin: 20vh 5vw 5vh 7vw;
+    width: 60vw;
+  }
+
+  #experience-header {
+    font-size: 4.3em;
+  }
+
+  #job-list {
+    margin-top: 2em;
+    padding-right: 3em;
+    max-height: calc(100% - 4.3em - 1.15em - 3em);
+    overflow: auto;
+    scrollbar-width: 7px;
+    scrollbar-color: #0F0F0F;
+  }
+
+  #job-list::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  #job-list::-webkit-scrollbar-track {
+    background: #0F0F0F;
+    border-radius: 20px;
+  }
+
+  #job-list::-webkit-scrollbar-thumb {
+    background-color: #0085FC;
+    border-radius: 20px;
+  }
+
+  .job-container {
+    display: flex;
+  }
+
+
+  .job-container:not(:first-child) {
+    margin-top: 1.7em;
+  }
+
+  .job-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .job-image {
+    max-width: 70px;
+    max-height: 120px;
+    object-fit: contain;
+  }
+
+  .more-button {
+    height: 1.1em;
+    padding: 3px 7px;
+    border-radius: 2px;
+    font-size: 1.1em; 
+    margin-top: .5em;
+  }
+
+  .more-button:hover {
+    cursor: pointer;
+  }
+
+  .job-content {
+    margin-left: .7em;
+  }
+
+  .job-duration {
+    font-size: 2.3em;
+    letter-spacing: -0.05cm;
+  }
+
+  .job-header {
+    margin-top: .3em;
+    font-size: 1.3em;
+    letter-spacing: -0.02cm;
+  }
+
+  .job-description {
+    margin-top: .2em;
+    font-size: 1.05em;
+    letter-spacing: -0.01cm;
+    color: #cfcfcf;
+  }
+}
+
 @media screen and (max-width: 750px) {
   #experience-container {
     position: absolute;
@@ -27,8 +125,6 @@
   
   .more-button {
     font-size: .8em;
-    border: 1px solid #0085FC;
-    color: #2DB3FC;
     padding: 3px 5px;
     border-radius: 1.5px;
   }
@@ -69,10 +165,9 @@
   }
   
   .job-description {
-    display: none;
     margin-top: 3px;
     font-size: .4cm;
-    color: #BFBFBF;
+    color: #cfcfcf;
     letter-spacing: -0.02cm;
   }  
 }
