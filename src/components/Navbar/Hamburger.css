@@ -1,7 +1,21 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 #hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #hamburger > div {
@@ -13,11 +27,15 @@
 }
 
 #bar1, #bar2, #bar3 {
-  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .change #bar1 {
-  transform: translate(0, 10px) rotate(-45deg);
+  -webkit-transform: translate(0, 10px) rotate(-45deg);
+      -ms-transform: translate(0, 10px) rotate(-45deg);
+          transform: translate(0, 10px) rotate(-45deg);
 }
 
 .change #bar2 {
@@ -25,7 +43,9 @@
 }
 
 .change #bar3 {
-  transform: translate(0, -10px) rotate(45deg);
+  -webkit-transform: translate(0, -10px) rotate(45deg);
+      -ms-transform: translate(0, -10px) rotate(45deg);
+          transform: translate(0, -10px) rotate(45deg);
 }
 
 @media screen and (min-width: 751px) { 

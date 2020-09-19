@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 #contact-container {
   color: #E8E8E8;
   font-family: 'Courier New', Courier, monospace;
@@ -18,8 +25,13 @@
   }
 
   .form-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .form-input > label {
@@ -31,7 +43,9 @@
   }
 
   .form-input > input, .form-input > textarea {
-    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+         -o-transition-duration: 0.4s;
+            transition-duration: 0.4s;
     background-color: #314354;
     color: #E8E8E8;
     border: none;
@@ -70,14 +84,22 @@
   }
 
   #send-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 20px;
     width: 75%;
   }
 
   #send-button {
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
     transition: 0.25s;
     outline: none;
     background-color: #1B1F24;
@@ -138,8 +160,13 @@
   }
   
   .form-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   
   .form-input > label {
@@ -152,7 +179,9 @@
   }
   
   .form-input > input, .form-input > textarea {
-    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+         -o-transition-duration: 0.4s;
+            transition-duration: 0.4s;
     background-color: #314354;
     color: #E8E8E8;
     border: none;
@@ -186,13 +215,21 @@
   }
   
   #send-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 20px;
   }
   
   #send-button {
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
     transition: 0.25s;
     outline: none;
     background-color: #1B1F24;
