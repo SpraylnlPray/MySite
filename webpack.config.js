@@ -1,4 +1,4 @@
-const HtmlWebPackkPlugin = require( 'html-webpack-plugin' );
+const HtmlWebPackPlugin = require( 'html-webpack-plugin' );
 const path = require( 'path' );
 const webpack = require( 'webpack' );
 const dotenv = require( 'dotenv' );
@@ -13,6 +13,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.join( __dirname, '/dir' ),
+    // path: path.resolver( __dirname, 'build' ),
     filename: 'bundle.js',
     publicPath: '/'
   },
@@ -37,7 +38,8 @@ module.exports = {
     historyApiFallback: true,
   },
   plugins: [
-    new HtmlWebPackkPlugin( {
+    new HtmlWebPackPlugin( {
+      // template: path.resolve('./index.html'),
       template: "./src/index.html",
       filename: "./index.html"
     } ),
