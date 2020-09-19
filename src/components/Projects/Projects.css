@@ -23,7 +23,6 @@
 @media screen and (min-width: 751px) {
   #projects-container {
     margin: 20vh 5vw 5vh 7vw;
-    max-width: 80vw;
     width: 60vw;
   }
 

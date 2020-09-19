@@ -1,20 +1,20 @@
+#contact-container {
+  color: #E8E8E8;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 @media screen and (min-width: 751px) {
-/* For PC */
   #contact-container {
-    color: #E8E8E8;
-    font-family: 'Courier New', Courier, monospace;
-    margin: auto 20px auto 20px;
+    margin: 20vh 5vw 5vh 7vw;
+    width: 60vw;
   }
 
   #contact-header {
-    margin-top: 15vh;
-    font-size: 0.8cm;
-    font-weight: 800;
-    letter-spacing: -0.02cm;
+    font-size: 4.3em;
   }
 
   #contact-form {
-    margin-top: 20px;
+    margin-top: 2.5em;
   }
 
   .form-input {
@@ -23,8 +23,7 @@
   }
 
   .form-input > label {
-    font-weight: 700;
-    font-size: 1.25em;
+    font-size: 2em;
   }
 
   .form-input:not(:first-child) {
@@ -36,10 +35,10 @@
     background-color: #314354;
     color: #E8E8E8;
     border: none;
-    line-height: 0.8cm;
+    line-height: 1.9em;
     font-size: 1.05em;
     font-family: 'Courier New', Courier, monospace;
-    letter-spacing: -0.04cm;
+    letter-spacing: -0.01cm;
     border-bottom: 2px solid black;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -48,7 +47,12 @@
   }
 
   .form-input > input {
-    width: 70%;
+    width: 45%;
+  }
+
+  .form-input > #message {
+    width: 75%;
+    height: 20vh;
   }
 
   .form-input > input:focus, .form-input > textarea:focus {
@@ -70,6 +74,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+    width: 75%;
   }
 
   #send-button {
@@ -98,6 +103,10 @@
     border-radius: 1.5px;
   }
 
+  #send-area > span {
+    margin-left: 7px;
+  }
+
   #error {
     border: 1px solid #D62727;
   }
@@ -114,8 +123,6 @@
 
 @media screen and (max-width: 750px) {
   #contact-container {
-    color: #E8E8E8;
-    font-family: 'Courier New', Courier, monospace;
     margin: auto 20px auto 20px;
   }
   
