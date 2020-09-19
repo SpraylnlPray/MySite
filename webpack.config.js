@@ -11,7 +11,7 @@ const env = dotenv.config().parsed;
 
 module.exports = () => {
   console.log( process.env );
-  const envKeys = Object.keys( env ).reduce( ( prev, next ) => {
+  const envKeys = Object.keys( process.env ).reduce( ( prev, next ) => {
     prev[ `process.env.${ next }` ] = JSON.stringify( env[ next ] );
     return prev;
   }, {} );
