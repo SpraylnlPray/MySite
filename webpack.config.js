@@ -12,7 +12,7 @@ const env = dotenv.config().parsed;
 module.exports = () => {
   console.log( process.env );
   const envKeys = Object.keys( process.env ).reduce( ( prev, next ) => {
-    prev[ `process.env.${ next }` ] = JSON.stringify( env[ next ] );
+    prev[ `process.env.${ next }` ] = JSON.stringify( process.env[ next ] );
     return prev;
   }, {} );
   console.log( envKeys );
