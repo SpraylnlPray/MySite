@@ -4,23 +4,16 @@ const webpack = require( 'webpack' );
 const dotenv = require( 'dotenv' );
 
 const env = dotenv.config().parsed;
-// const envKeys = Object.keys( env ).reduce( ( prev, next ) => {
-//   prev[ `process.env.${ next }` ] = JSON.stringify( env[ next ] );
-//   return prev;
-// }, {} );
 
 module.exports = () => {
-  console.log( process.env );
   const envKeys = Object.keys( process.env ).reduce( ( prev, next ) => {
     prev[ `process.env.${ next }` ] = JSON.stringify( process.env[ next ] );
     return prev;
   }, {} );
-  console.log( envKeys );
   return {
     entry: './src/index.js',
     output: {
       path: path.join( __dirname, '/dir' ),
-      // path: path.resolver( __dirname, 'build' ),
       filename: 'bundle.js',
       publicPath: '/'
     },
@@ -46,7 +39,6 @@ module.exports = () => {
     },
     plugins: [
       new HtmlWebPackPlugin( {
-        // template: path.resolve('./index.html'),
         template: "./src/index.html",
         filename: "./index.html"
       } ),
