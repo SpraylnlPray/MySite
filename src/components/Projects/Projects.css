@@ -1,9 +1,106 @@
-@media screen and (max-width: 751px) {
+#projects-container {
+  color: #E8E8E8;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#projects-caption a, .project-container a {
+  color: #E8E8E8;
+}
+
+#projects-caption a:visited, .project-container a:visited {
+  color: #E8E8E8;
+}
+
+.project-description {
+  display: none;
+}
+
+.project-more-button {
+  border: 1px solid #0085FC;
+  color: #2DB3FC;
+}
+
+@media screen and (min-width: 751px) {
   #projects-container {
-    color: #E8E8E8;
+    margin: 20vh 5vw 5vh 7vw;
+    max-width: 80vw;
+    width: 60vw;
+  }
+
+  #projects-header {
+    font-size: 4.3em;
+  }
+
+  #projects-caption {
+    font-size: 1.15em;
+  }
+
+  #projects-list {
+    margin-top: 2em;
+    padding-right: .8em;
+    max-height: calc(100% - 4.3em - 1.15em - 3em);
+    overflow: auto;
+  }
+
+  #projects-list {
+    scrollbar-width: 7px;
+    scrollbar-color: #0F0F0F;
+  }
+
+  #projects-list::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  #projects-list::-webkit-scrollbar-track {
+    background: #0F0F0F;
+    border-radius: 20px;
+  }
+
+  #projects-list::-webkit-scrollbar-thumb {
+    background-color: #0085FC;
+    border-radius: 20px;
+  }
+
+  .project-container:not(:first-child) {
+    margin-top: 1.7em;
+  }
+
+  .project-top-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .project-title {
+    font-size: 2em;
+    letter-spacing: -0.03cm;
+  }
+
+  .project-more-button {
+    margin-left: .6em;
+    margin-top: .2em;
+    padding: 3px 7px;
+    border-radius: 2px;
+    font-size: 1.1em;
+  }
+
+  .project-more-button:hover {
+    cursor: pointer;
+  }
+
+  .project-sub {
+    margin-top: .3em;
+    font-size: 1.15em;
+  }
+
+  .project-description {
+    margin-top: .2em;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #projects-container {
     position: absolute;
     top: 15vh;
-    font-family: 'Courier New', Courier, monospace;
     margin: auto 10px;
   }
   
@@ -24,14 +121,6 @@
     line-height: 1.05em;
   }
   
-  #projects-caption a, .project-container a {
-    color: #E8E8E8;
-  }
-  
-  #projects-caption a:visited, .project-container a:visited {
-    color: #E8E8E8;
-  }
-  
   .project-container:not(:first-child) {
     margin-top: 15px;
   }
@@ -43,8 +132,6 @@
   
   .project-more-button {
     font-size: .8em;
-    border: 1px solid #0085FC;
-    color: #2DB3FC;
     padding: 3px 5px;
     border-radius: 1.5px;
     height: 1em;
@@ -64,7 +151,6 @@
   
   .project-description {
     margin-top: .25em;
-    display: none;
     letter-spacing: -0.02cm;
   }
 }

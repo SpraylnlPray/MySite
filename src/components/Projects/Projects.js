@@ -33,7 +33,7 @@ const Projects = () => {
   return (
     <div id='projects-container'>
       <div id='projects-header'>My Work</div>
-      <div id='projects-caption'>A list of things I created during the years. Documents as well as Code. For more visit my <a href='https://github.com/SpraylnlPray'>GitHub</a>.</div>
+      <div id='projects-caption'>Things I created during the years. Documents as well as Code. For more visit my <a href='https://github.com/SpraylnlPray'>GitHub</a> profile.</div>
       <div id='projects-list'>
         {projectElements}
       </div>

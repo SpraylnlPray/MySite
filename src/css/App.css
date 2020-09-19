@@ -1,5 +1,6 @@
-body {
-  margin: 0;
+* {
+  margin: 0; 
+  padding: 0;
 }
 
 #container {
@@ -18,4 +19,8 @@ body {
   #container {
     display: flex;
   }
+}
+
+.show {
+  display: block !important;
 }
