@@ -16,7 +16,6 @@ module.exports = () => {
       path: path.join( __dirname, '/dir' ),
       filename: 'bundle.js',
       publicPath: '/',
-      historyApiFallback: true,
     },
     module: {
       rules: [
