@@ -1,3 +1,6 @@
+const codesysLogo = require('../../icons/CODESYS-logo-standard.png');
+const ioetLogo = require('../../icons/ioetLogo4x6.png');
+
 const jobs = [
   {
     key: 'codesys',
@@ -8,7 +11,7 @@ const jobs = [
     position: 'Intern',
     workload: '8h/Week',
     description: 'Architectural refactoring of an internal tool and porting it from Python to C#, as well as setting up various Raspberry-Pi for testing purposes',
-    imagePath: '../../../icons/CODESYS-logo-standard.png',
+    image: codesysLogo,
   },
   {
     key: 'ioet',
@@ -19,7 +22,7 @@ const jobs = [
     position: 'Intern',
     workload: 'Fulltime',
     description: 'Backend Development in Python 3, implemented an algorithm that solves a spacial allocation problem and deployed it to an AWS lambda function',
-    imagePath: '../../../icons/ioetLogo4x6.png',
+    image: ioetLogo,
   },
 ]
 

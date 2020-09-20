@@ -20,7 +20,7 @@ const Experience = () => {
     return (
       <div key={job.key} id={`${ job.key }`} className='job-container'>
         <div className='job-image-container' >
-          <img src={job.imagePath} className='job-image' alt={`Logo of ${ job.companyName }`} />
+          <img src={job.image.default} className='job-image' alt={`Logo of ${ job.companyName }`} />
           <div id={`${ job.key }-more-button`} className='more-button' onClick={( e ) => { handleMoreClick( e, job ); }}>
             More
           </div>

@@ -3,7 +3,7 @@ const path = require( 'path' );
 const webpack = require( 'webpack' );
 const dotenv = require( 'dotenv' );
 
-const env = dotenv.config().parsed;
+dotenv.config().parsed;
 
 module.exports = () => {
   const envKeys = Object.keys( process.env ).reduce( ( prev, next ) => {
@@ -27,6 +27,10 @@ module.exports = () => {
         {
           test: /\.css$/,
           use: [ 'style-loader', 'css-loader' ]
+        },
+        {
+          test: /\.(jpe?g|gif|png|svg|woff|ttf|wav|mp3)$/,
+          loader: 'file-loader',
         },
       ]
     },
