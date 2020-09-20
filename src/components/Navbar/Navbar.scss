@@ -5,9 +5,14 @@
 * Browsers: last 4 version
 */
 
+@use '../../scss/globals.scss';
+
+#navbar {
+  background-color: globals.$navbar-color;
+}
+
 @media screen and (min-width: 751px) {
   #navbar{
-    background-color: #0F0F0F;
     width: 10vw;
     max-width: 180px;
     min-width: 100px;
@@ -39,7 +44,6 @@
 @media screen and (max-width: 750px) {
   #navbar {
     height: 55px;
-    background-color: #0F0F0F;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

@@ -4,18 +4,19 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
+@use '../../scss/globals.scss';
 
 #projects-container {
-  color: #E8E8E8;
-  font-family: 'Courier New', Courier, monospace;
+  color: globals.$font-color;
+  font-family: globals.$font-stack;
 }
 
 #projects-caption a, .project-container a {
-  color: #E8E8E8;
+  color: globals.$font-color;
 }
 
 #projects-caption a:visited, .project-container a:visited {
-  color: #E8E8E8;
+  color: globals.$font-color;
 }
 
 .project-description {
@@ -23,8 +24,8 @@
 }
 
 .project-more-button {
-  border: 1px solid #0085FC;
-  color: #2DB3FC;
+  border: 1px solid globals.$button-border-color;
+  color: globals.$button-letter-color;
 }
 
 @media screen and (min-width: 751px) {
@@ -50,7 +51,7 @@
 
   #projects-list {
     scrollbar-width: 7px;
-    scrollbar-color: #0F0F0F;
+    scrollbar-color: globals.$navbar-color;
   }
 
   #projects-list::-webkit-scrollbar {
@@ -63,7 +64,7 @@
   }
 
   #projects-list::-webkit-scrollbar-thumb {
-    background-color: #0085FC;
+    background-color: globals.$active-color;
     border-radius: 20px;
   }
 

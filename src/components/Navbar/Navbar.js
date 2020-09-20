@@ -5,7 +5,7 @@ import AboutButton from '../Buttons/AboutButton';
 import ProjectsButton from '../Buttons/ProjectsButton';
 import ExperienceButton from '../Buttons/ExperienceButton';
 import ContactButton from '../Buttons/ContactButton';
-import './Navbar.css';
+import './Navbar.scss';
 
 const Navbar = () => {
   const [ menuExpanded, setMenuExpanded ] = useState( false );

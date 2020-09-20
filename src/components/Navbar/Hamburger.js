@@ -1,5 +1,5 @@
 import React from 'react';
-import './Hamburger.css';
+import './Hamburger.scss';
 import PropTypes from 'prop-types';
 
 const Hamburger = ( { handleClick } ) => {

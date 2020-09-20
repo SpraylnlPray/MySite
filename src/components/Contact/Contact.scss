@@ -5,9 +5,11 @@
 * Browsers: last 4 version
 */
 
+@use '../../scss/globals.scss';
+
 #contact-container {
-  color: #E8E8E8;
-  font-family: 'Courier New', Courier, monospace;
+  color: globals.$font-color;
+  font-family: globals.$font-stack;
 }
 
 @media screen and (min-width: 751px) {
@@ -47,11 +49,11 @@
          -o-transition-duration: 0.4s;
             transition-duration: 0.4s;
     background-color: #314354;
-    color: #E8E8E8;
+    color: globals.$font-color;
     border: none;
     line-height: 1.9em;
     font-size: 1.05em;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: globals.$font-stack;
     letter-spacing: -0.01cm;
     border-bottom: 2px solid black;
     border-top-left-radius: 3px;
@@ -71,7 +73,7 @@
 
   .form-input > input:focus, .form-input > textarea:focus {
     outline: none;
-    border-bottom: 2px solid #0085FC;
+    border-bottom: 2px solid globals.$active-color;
   }
 
   .form-input > input:invalid, .form-input > textarea:invalid {
@@ -102,15 +104,15 @@
     -o-transition: 0.25s;
     transition: 0.25s;
     outline: none;
-    background-color: #1B1F24;
-    border: 1px solid #0085FC;
-    color: #2DB3FC;
+    background-color: globals.$background-color;
+    border: 1px solid globals.$button-border-color;
+    color: globals.$button-letter-color;
     text-decoration: none;
     border-radius: 1.5px;
     text-align: center;
     font-weight: 400;
     font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: globals.$font-stack;
     letter-spacing: -1px;
     padding: 12px 18px;
   }
@@ -138,7 +140,7 @@
   }
 
   #loading {
-    border: 1px solid #0085FC;
+    border: 1px solid globals.$active-color;
   }
 }
 
@@ -183,11 +185,11 @@
          -o-transition-duration: 0.4s;
             transition-duration: 0.4s;
     background-color: #314354;
-    color: #E8E8E8;
+    color: globals.$font-color;
     border: none;
     line-height: 0.8cm;
     font-size: 1.05em;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: globals.$font-stack;
     letter-spacing: -0.04cm;
     border-bottom: 2px solid black;
     border-top-left-radius: 3px;
@@ -202,7 +204,7 @@
   
   .form-input > input:focus, .form-input > textarea:focus {
     outline: none;
-    border-bottom: 2px solid #0085FC;
+    border-bottom: 2px solid globals.$active-color;
   }
   
   .form-input > input:invalid, .form-input > textarea:invalid {
@@ -232,15 +234,15 @@
     -o-transition: 0.25s;
     transition: 0.25s;
     outline: none;
-    background-color: #1B1F24;
-    border: 1px solid #0085FC;
-    color: #2DB3FC;
+    background-color: globals.$background-color;
+    border: 1px solid globals.$button-border-color;
+    color: globals.$button-letter-color;
     text-decoration: none;
     border-radius: 1.5px;
     text-align: center;
     font-weight: 400;
     font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: globals.$font-stack;
     letter-spacing: -1px;
     padding: 12px 18px;
   }
@@ -264,6 +266,6 @@
   }
   
   #loading {
-    border: 1px solid #0085FC;
+    border: 1px solid globals.$active-color;
   }
 }

@@ -5,13 +5,15 @@
 * Browsers: last 4 version
 */
 
+@use '../../scss/globals.scss';
+
 .job-description {
   display: none;
 }
 
 .more-button {
-  border: 1px solid #0085FC;
-  color: #2DB3FC;
+  border: 1px solid globals.$button-border-color;
+  color: globals.$button-letter-color;
 }
 
 @media screen and (min-width: 751px) {
@@ -30,7 +32,7 @@
     max-height: calc(100% - 4.3em - 1.15em - 3em);
     overflow: auto;
     scrollbar-width: 7px;
-    scrollbar-color: #0F0F0F;
+    scrollbar-color: globals.$background-color;
   }
 
   #job-list::-webkit-scrollbar {
@@ -43,7 +45,7 @@
   }
 
   #job-list::-webkit-scrollbar-thumb {
-    background-color: #0085FC;
+    background-color: globals.$background-color;
     border-radius: 20px;
   }
 
@@ -118,8 +120,6 @@
     position: absolute;
     top: 15vh;
     margin: auto 10px;
-    color: #E8E8E8;
-    font-family: 'Courier New', Courier, monospace;
   }
   
   #experience-header {
@@ -154,8 +154,6 @@
   }
   
   .job-container {
-    color: #E8E8E8;
-    font-family: 'Courier New', Courier, monospace;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

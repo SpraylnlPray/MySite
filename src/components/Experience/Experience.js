@@ -1,5 +1,5 @@
 import React from 'react';
-import './Experience.css';
+import './Experience.scss';
 import jobs from '../../static/Jobs';
 
 const Experience = () => {

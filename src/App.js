@@ -6,7 +6,7 @@ import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Experience from './components/Experience/Experience';
 import Contact from './components/Contact/Contact';
-import './css/App.css';
+import './scss/App.scss';
 
 class App extends React.Component {
   componentDidMount() {

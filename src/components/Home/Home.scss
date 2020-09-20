@@ -1,3 +1,10 @@
+@use '../../scss/globals.scss';
+
+#home-container {
+
+}
+
+
 @media screen and (min-width: 751px) {
   #home-container {
     margin-top: 40vh;
@@ -21,22 +28,20 @@
   #touch-button {
     margin-top: 1.5em;
     text-decoration: none;
-    background-color: #1B1F24;
-    border: 1px solid #0085FC;
-    color: #2DB3FC;
+    background-color: globals.$background-color;
+    border: 1px solid globals.$button-border-color;
+    color: globals.$button-letter-color;
     outline: none;
-    font-family: 'Courier New', Courier, monospace;
     font-size: 1.5em;
     letter-spacing: -0.02cm;
     font-weight: 500;
     padding: 12px 18px;
+    font-family: globals.$font-stack;
   }
 }
 
 @media screen and (max-width: 750px) {
   #home-container {
-    color: #E8E8E8;
-    font-family: 'Courier New', Courier, monospace;
     margin: 27vh auto auto 25px;
   }
   
@@ -61,15 +66,15 @@
   }
   
   #touch-button {
-    background-color: #1B1F24;
-    border: 1px solid #0085FC;
-    color: #2DB3FC;
+    background-color: globals.$background-color;
+    border: 1px solid globals.$button-border-color;
+    color: globals.$button-letter-color;
     text-decoration: none;
     border-radius: 1.5px;
     text-align: center;
     font-weight: 400;
     font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: globals.$font-stack;
     letter-spacing: -1px;
     padding: 12px 18px;
     margin-top: 20px;

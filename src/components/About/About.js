@@ -1,6 +1,6 @@
 import React from 'react';
 import { GoLocation } from 'react-icons/go';
-import './About.css';
+import './About.scss';
 
 const About = () => {
   return (

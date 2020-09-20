@@ -1,6 +1,6 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-import './Contact.css';
+import './Contact.scss';
 
 class Contact extends React.Component {
   constructor( props ) {
