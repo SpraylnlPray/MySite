@@ -1,3 +1,5 @@
+const backpropagationPdf = require('../../PDF/Seminararbeit.pdf');
+
 const projects = [
   {
     key: 'yc-course',
@@ -13,7 +15,7 @@ const projects = [
     title: 'Backpropagation und -varianten',
     sub: '6th Semester, Seminar Work',
     description: 'In this paper I explain the idea behind backpropagation - the "magic" that makes neural networks learn - and also look at some variations of the basic implementation, that aim to fix some of its problems. (German only)',
-    source: '../../../PDF/Seminararbeit.pdf',
+    source: backpropagationPdf,
     source_text: 'Download',
     download: true,
   },
