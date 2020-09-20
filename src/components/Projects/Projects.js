@@ -25,7 +25,7 @@ const Projects = () => {
         </div>
         <div className='project-sub'>{project.sub}</div>
         <div id={`${ project.key }-description`} className='project-description'>{project.description}</div>
-        <a href={project.source.default} download={project.source_type}>{project.source_text}</a>
+        <a href={project.source.default ? project.source.default : project.source} download={project.source_type}>{project.source_text}</a>
       </div>
     );
   } );
