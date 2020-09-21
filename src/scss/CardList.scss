@@ -5,9 +5,14 @@ $mobile-side-margin: 5vw;
 
 @media screen and (min-width: globals.$desktop-screen) {
   .card-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 90%;
     padding-left: 2vw;
     margin-top: 2vh;
@@ -41,9 +46,14 @@ $mobile-side-margin: 5vw;
 
 @media screen and (max-width: globals.$mobile-screen) {
   .card-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: $mobile-top-margin $mobile-side-margin auto $mobile-side-margin;
     padding-top: 20px;
     overflow: auto;
