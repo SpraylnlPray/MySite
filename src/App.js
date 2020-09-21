@@ -9,17 +9,6 @@ import Contact from './components/Contact/Contact';
 import './scss/App.scss';
 
 class App extends React.Component {
-  componentDidMount() {
-    this.setWindowSize();
-  }
-
-  setWindowSize() {
-    const w = Math.max( document.documentElement.clientWidth, window.innerWidth || 0 );
-    const h = Math.max( document.documentElement.clientHeight, window.innerHeight || 0 );
-    document.getElementById( 'root' ).style.height = h.toString() + 'px';
-    document.getElementById( 'root' ).style.width = w.toString() + 'px';
-  }
-
   render() {
     return (
       <div id='container'>

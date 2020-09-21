@@ -7,7 +7,7 @@
 
 #container {
   background-color: globals.$background-color;
-  height: 100%;
+  height: 100vh;
   color: globals.$font-color;
   font-family: globals.$font-stack;
 }
@@ -25,4 +25,53 @@
 
 .show {
   display: block !important;
+}
+
+@media screen and (min-width: 751px) {
+  .route-container {
+    padding: 7vh 7vw 7vh 7vw;
+    box-sizing: border-box;
+    width: calc(100% - 10vw);
+  }
+
+  .route-top-container {
+    max-height: 110px;
+  }
+
+  .route-header {
+    font-size: 4.3em;
+  }
+
+  .route-caption {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #cfcfcf;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .route-container {
+    margin-top: globals.$navbar-mobile-height;
+    height: calc(100vh - #{globals.$navbar-mobile-height});
+    margin: auto 10px;
+  }
+
+  .route-top-container {
+    padding-top: 15px;
+    max-height: 110px;
+    margin: auto 5vw;
+  }
+
+  .route-header {
+    font-size: 2.2em;
+    font-weight: 800;
+    letter-spacing: -0.02cm;
+  }
+
+  .route-caption {
+    margin-top: 5px;
+    font-size: .4cm;
+    color: #cfcfcf;
+    letter-spacing: -0.02cm;
+  }
 }

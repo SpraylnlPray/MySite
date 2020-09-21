@@ -28,7 +28,11 @@
   color: globals.$button-letter-color;
 }
 
-@media screen and (min-width: 751px) {
+a {
+  color: globals.$font-color;
+}
+
+@media screen and (min-width: globals.$desktop-screen) {
   #projects-container {
     margin: 20vh 5vw 5vh 7vw;
     width: 60vw;
@@ -105,67 +109,5 @@
 
   .project-description {
     margin-top: .2em;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  #projects-container {
-    position: absolute;
-    top: 15vh;
-    margin: auto 10px;
-  }
-  
-  #projects-header {
-    font-size: 2.2em;
-    font-weight: 800;
-    letter-spacing: -0.02cm;
-  }
-  
-  #projects-list {
-    margin-top: 4vh;
-    overflow: auto;
-    height: calc(100vh - 2.2em - 15vh - 23vh);
-  }
-  
-  #projects-caption, .project-description, .project-container a {
-    font-size: 0.75em;
-    line-height: 1.05em;
-  }
-  
-  .project-container:not(:first-child) {
-    margin-top: 15px;
-  }
-  
-  .project-top-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: bottom;
-        -ms-flex-align: bottom;
-            align-items: bottom;
-  }
-  
-  .project-more-button {
-    font-size: .8em;
-    padding: 3px 5px;
-    border-radius: 1.5px;
-    height: 1em;
-    margin-top: 4px;
-    margin-left: 7px;
-  }
-  
-  .project-title {
-    font-size: 1.5em;
-    font-weight: 700;
-    letter-spacing: -0.02cm;
-  }
-  
-  .project-sub {
-    margin-top: .35em;
-  }
-  
-  .project-description {
-    margin-top: .25em;
-    letter-spacing: -0.02cm;
   }
 }

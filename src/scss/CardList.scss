@@ -1,0 +1,53 @@
+$mobile-top-margin: 2vh;
+$mobile-side-margin: 5vw;
+
+@use '../scss/globals.scss';
+
+@media screen and (min-width: globals.$desktop-screen) {
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    padding-left: 2vw;
+    margin-top: 2vh;
+    padding-right: 3vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    overflow: auto;
+    // Höhe - max height of header area - margin of cards
+    height: calc(100% - 110px - 30px)
+  }
+
+  .card-list {
+    scrollbar-width: 7px;
+    scrollbar-color: globals.$navbar-color;
+  }
+
+  .card-list::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  .card-list::-webkit-scrollbar-track {
+    background: globals.$navbar-color;
+    border-radius: 20px;
+  }
+
+  .card-list::-webkit-scrollbar-thumb {
+    background-color: globals.$active-color;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: globals.$mobile-screen) {
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: $mobile-top-margin $mobile-side-margin auto $mobile-side-margin;
+    padding-top: 20px;
+    overflow: auto;
+    // height of container - top margin of header area - max height of header area - padding of card-list - 20px just to be sure
+    height: calc(100% - 15px - 110px - 20px - 20px);
+  }
+}
