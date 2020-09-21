@@ -1,9 +1,44 @@
 const HtmlWebPackPlugin = require( 'html-webpack-plugin' );
+const SitemapPlugin = require( 'sitemap-webpack-plugin' ).default;
 const path = require( 'path' );
 const webpack = require( 'webpack' );
 const dotenv = require( 'dotenv' );
 
 dotenv.config().parsed;
+
+const paths = [
+  {
+    path: '/',
+    lastmod: '2020-09-21',
+    priority: '0.5',
+    changefreq: 'monthly'
+  },
+  {
+    path: '/about',
+    lastmod: '2020-09-21',
+    priority: '0.6',
+    changefreq: 'weekly'
+  },
+  {
+    path: '/projects',
+    lastmod: '2020-09-21',
+    priority: '0.8',
+    changefreq: 'weekly'
+  },
+  {
+    path: '/experience',
+    lastmod: '2020-09-21',
+    priority: '0.8',
+    changefreq: 'weekly'
+  },
+  {
+    path: '/contact',
+    lastmod: '2020-09-21',
+    priority: '0.3',
+    changefreq: 'monthly'
+  },
+];
+
 
 module.exports = () => {
   const envKeys = Object.keys( process.env ).reduce( ( prev, next ) => {
@@ -47,6 +82,7 @@ module.exports = () => {
         filename: "./index.html"
       } ),
       new webpack.DefinePlugin( envKeys ),
+      new SitemapPlugin( 'https://danielwildegger.com', paths ),
     ]
   };
 }

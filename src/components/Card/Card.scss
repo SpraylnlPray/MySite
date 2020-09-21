@@ -7,9 +7,14 @@
 
 @use '../../scss/globals.scss';
 
+$distance: 1200px;
+$roation-time: .4s;
+$card-width: 270px;
+$card-height: 300px;
+
 .card {
-  -webkit-perspective: 1500px;
-          perspective: 1500px;
+  -webkit-perspective: $distance;
+          perspective: $distance;
   &.card--flipped {
     .card__inner {
       -webkit-transform: rotateY(-180deg);
@@ -20,17 +25,17 @@
 
 .card,
 .card__inner {
-  width: 270px;
-  height: 300px;
+  width: $card-width;
+  height: $card-height;
   max-width: 100%;
 }
 
 .card__inner {
-  -webkit-transition: -webkit-transform .25s ease-in-out;
-  transition: -webkit-transform .25s ease-in-out;
-  -o-transition: transform .25s ease-in-out;
-  transition: transform .25s ease-in-out;
-  transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
+  -webkit-transition: -webkit-transform $roation-time ease-in-out;
+  transition: -webkit-transform $roation-time ease-in-out;
+  -o-transition: transform $roation-time ease-in-out;
+  transition: transform $roation-time ease-in-out;
+  transition: transform $roation-time ease-in-out, -webkit-transform $roation-time ease-in-out;
 
   -webkit-transform-origin: 50% 50%;
 
