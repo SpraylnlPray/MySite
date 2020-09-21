@@ -7,7 +7,7 @@
 
 #container {
   background-color: globals.$background-color;
-  height: 100vh;
+  min-height: 100vh;
   color: globals.$font-color;
   font-family: globals.$font-stack;
 }
