@@ -53,6 +53,10 @@
 }
 
 @media screen and (max-width: 750px) {
+  #container {
+    min-height: 100vh;
+  }
+
   .route-container {
     margin-top: globals.$navbar-mobile-height;
     height: calc(100vh - #{globals.$navbar-mobile-height});
