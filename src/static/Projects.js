@@ -1,7 +1,7 @@
 const backpropagationPdf = require( '../../PDF/Seminararbeit.pdf' );
-const backPropImage = require( '../../images/BackPropFront2.png' );
-const yelpCampImage = require( '../../images/YelpCampFront2.png' );
-const cyberImage = require( '../../images/CybercellFront2.png' );
+const backPropImage = require( '../../images/BackPropFront.png' );
+const yelpCampImage = require( '../../images/YelpCampFront.png' );
+const cyberImage = require( '../../images/CybercellFront.png' );
 
 const projects = [
   {
