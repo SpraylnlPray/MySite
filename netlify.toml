@@ -5,4 +5,3 @@
 [context.production]
   publish = "./dir"
   command = "npm run build_app"
-  functions = "lambda"
