@@ -35,7 +35,7 @@ const projects = [
     frontSub: 'Seminar Work',
     backSub: '',
     description: 'In this paper I explain the idea behind backpropagation - the "magic" that makes neural networks learn - and also look at some variations of the basic algorithm, that aim to fix some of its problems. (German only)',
-    ref: 'https://1drv.ms/b/s!AhSIZrInM6aXkSaEwQnlspLieMBb?e=yrD84X',
+    ref: 'https://onedrive.live.com/view.aspx?cid=97A63327B2668814&authKey=%21AITBCeWykuJ4wFs&resid=97A63327B2668814%212214&canary=%2Bv3icuzS1GbOT89hao1x0xSixfhD6B58fmjoUIXSdeY%3D3&ithint=%2Epdf&open=true&app=WordPdf',
     refText: 'View',
     download: false,
     image: backPropImage,
