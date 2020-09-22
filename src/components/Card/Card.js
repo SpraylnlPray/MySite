@@ -16,7 +16,7 @@ const Card = ( { details } ) => {
           <img
             className='card__image'
             src={details.image.default ? details.image.default : details.image}
-            alt={details.title + 'image'}
+            alt={details.header + ' image'}
           />
           <div className='card__heading'>{details.header}</div>
           <div className='card__sub'>{details.frontSub}</div>
