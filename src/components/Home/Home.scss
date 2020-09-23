@@ -1,11 +1,20 @@
 @use '../../scss/globals.scss';
 
-@media screen and (min-width: 751px) {
+@media screen and (min-width: globals.$desktop-screen) {
   #home-container {
-    margin-top: 40vh;
-    margin-left: 7vw;
+    padding-top: 40vh;
+    padding-left: 7vw;
+    width: 90vw;
+    // background-image: url('../../../images/background-try.jpg');
+    // background-position: center;
+    // background-size: cover;
+    // horizontal offset, vertical offset, blur radius, shadow spread
+    // box-shadow: inset 45vw 0px 35vw 0px rgba(27,31,36,0.45), inset 37vw 0px 20vw 0px rgba(27,31,36,0.60), inset 30vw 0px 25vw 0px rgba(27,31,36,0.78),
+    //             inset 25vw 0px 25vw 0px rgba(27,31,36,0.80), inset 15vw 0px 10vw 0px rgba(27,31,36,1), 
+    //             inset -20vw 0px 15vw 0px rgba(27,31,36,0.45), inset -17vw 0px 10vw 0px rgba(27,31,36,0.65), inset -12vw 0px 7vw 0px rgba(27,31,36,0.8),
+    //             inset -10vw 0px 6vw 0px rgba(27,31,36,1);
   }
-  
+ 
   #hi {
     font-size: 5em;
   }
@@ -35,12 +44,15 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: globals.$mobile-screen) {
   #home-container {
     box-sizing: border-box;
-    padding-top: 27vh;
+    padding-top: 33vh;
     padding-left: 25px;;
     height: calc(100vh - #{globals.$navbar-mobile-height});
+    background-image: url('../../../images/background-try.jpg');
+    background-position: center;
+    background-size: cover;
   }
   
   #hi {

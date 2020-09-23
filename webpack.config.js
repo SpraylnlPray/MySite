@@ -21,7 +21,7 @@ const paths = [
   },
   {
     path: '/projects',
-    lastmod: '2020-09-22',
+    lastmod: '2020-09-23',
     priority: '0.8',
     changefreq: 'weekly'
   },

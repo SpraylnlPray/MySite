@@ -5,9 +5,12 @@ import './Home.scss';
 const Home = () => {
   return (
     <div id='home-container'>
-      <div id='hi'>Hi,</div>
-      <div id='presentation'>
-        I&apos;m Daniel.<br />
+      {/* <div className='background'> */}
+      {/* </div> */}
+      {/* <div className='content'> */}
+        <div id='hi'>Hi,</div>
+        <div id='presentation'>
+          I&apos;m Daniel.<br />
           A CS student<br />
           from Germany.
         </div>
@@ -17,6 +20,7 @@ const Home = () => {
         <Link to='/contact'>
           <button id='touch-button'>Get in Touch</button>
         </Link>
+      {/* </div> */}
     </div>
   );
 }

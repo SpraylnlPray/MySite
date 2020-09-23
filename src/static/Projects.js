@@ -2,12 +2,13 @@ const backPropImage = require( '../../images/BackPropFront.png' );
 const yelpCampImage = require( '../../images/YelpCampFront.png' );
 const cyberImage = require( '../../images/CybercellFront.png' );
 const tragedyImage = require( '../../images/TragedyFront.png' );
+const perlinImage = require( '../../images/PerlinNoiseFront.png' );
 
 const projects = [
   {
     key: 'yc-course',
     header: 'YelpCamp',
-    time: '7th Semester',
+    time: 'Free Time',
     frontSub: 'Udemy Course',
     backSub: '',
     description: 'This website is the result of a course on Udemy that introduced me to web development and tought me the basics of HTML, CSS and JavaScript. The site is a place to leave reviews on fictive camping sites. It has authentication and authorization and is connected to a mongo DB.',
@@ -15,6 +16,42 @@ const projects = [
     refText: 'Visit',
     download: false,
     image: yelpCampImage,
+  },
+  {
+    key: 'perlin-ki',
+    header: 'Perlin Noise 3D Maps',
+    time: '7th Semester',
+    frontSub: 'Personal Interest',
+    backSub: '',
+    description: 'In the AI class we heard about the idea of creating 3D landscapes using Perlin Noise. This is a (not finished) C++ programm where I tried to do so. The visualization was done with Python.',
+    ref: 'https://github.com/SpraylnlPray/PerlinNoise',
+    refText: 'GitHub',
+    download: false,
+    image: perlinImage,
+  },
+  {
+    key: 'univ-stack',
+    header: 'Universal Stack',
+    time: 'Free Time',
+    frontSub: 'Personal Interest',
+    backSub: '',
+    description: 'A short C++ program to explore void pointers and functions like malloc, calloc and memset.',
+    ref: 'https://github.com/SpraylnlPray/UniversalStack',
+    refText: 'GitHub',
+    download: false,
+    image: '',
+  },
+  {
+    key: 'dm-binConv',
+    header: 'Arithmetic Encoding',
+    time: '7th Semester',
+    frontSub: 'Weekly Assignment',
+    backSub: '',
+    description: 'A short program that converts a string message into its binary representation, using an algorithm proposed by Witten, Neal and Cleary in 1987. It was topic in the Ditigal Media class by Prof. Dr. Ulhaas.',
+    ref: 'https://github.com/SpraylnlPray/BinConverter',
+    refText: 'GitHub',
+    download: false,
+    image: '',
   },
   {
     key: 'public-goods-sem',
