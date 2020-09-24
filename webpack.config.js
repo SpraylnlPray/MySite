@@ -2,6 +2,7 @@ const HtmlWebPackPlugin = require( 'html-webpack-plugin' );
 const SitemapPlugin = require( 'sitemap-webpack-plugin' ).default;
 const path = require( 'path' );
 const webpack = require( 'webpack' );
+const RobotsPlugin = require('@tanepiper/robots-webpack-plugin');
 const dotenv = require( 'dotenv' );
 
 dotenv.config().parsed;
@@ -83,6 +84,7 @@ module.exports = () => {
       } ),
       new webpack.DefinePlugin( envKeys ),
       new SitemapPlugin( 'https://danielwildegger.com', paths ),
+      new RobotsPlugin(),
     ]
   };
 }
