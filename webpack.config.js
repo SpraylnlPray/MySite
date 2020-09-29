@@ -2,7 +2,6 @@ const HtmlWebPackPlugin = require( 'html-webpack-plugin' );
 const SitemapPlugin = require( 'sitemap-webpack-plugin' ).default;
 const path = require( 'path' );
 const webpack = require( 'webpack' );
-const RobotsPlugin = require('@tanepiper/robots-webpack-plugin');
 const dotenv = require( 'dotenv' );
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
@@ -85,7 +84,6 @@ module.exports = () => {
       } ),
       new webpack.DefinePlugin( envKeys ),
       new SitemapPlugin( 'https://danielwildegger.com', paths ),
-      // new RobotsPlugin(),
       new CopyWebpackPlugin({
         patterns: [
           {from: './robots.txt', to: './robots.txt' }
