@@ -84,7 +84,7 @@ module.exports = () => {
       } ),
       new webpack.DefinePlugin( envKeys ),
       new SitemapPlugin( 'https://danielwildegger.com', paths ),
-      new RobotsPlugin(),
+      // new RobotsPlugin(),
     ]
   };
 }
