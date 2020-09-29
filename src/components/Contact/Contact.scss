@@ -12,7 +12,7 @@
   font-family: globals.$font-stack;
 }
 
-@media screen and (min-width: 751px) {
+@media screen and (min-width: globals.$desktop-screen) {
   #contact-container {
     margin: 20vh 5vw 5vh 7vw;
     width: 60vw;
@@ -145,7 +145,7 @@
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: globals.$mobile-screen) {
   #contact-container {
     box-sizing: border-box;
     padding-top: 15vh;

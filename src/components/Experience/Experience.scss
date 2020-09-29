@@ -16,7 +16,7 @@
   color: globals.$button-letter-color;
 }
 
-@media screen and (min-width: 751px) {
+@media screen and (min-width: globals.$desktop-screen) {
   #experience-container {
     margin: 20vh 5vw 5vh 7vw;
     width: 60vw;

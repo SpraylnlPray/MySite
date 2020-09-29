@@ -37,7 +37,7 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: globals.$mobile-screen) {
   #navbar {
     height: globals.$navbar-mobile-height;
     display: -webkit-box;
