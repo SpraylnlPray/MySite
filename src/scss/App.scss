@@ -29,10 +29,6 @@
   display: block !important;
 }
 
-.hidden-h1 {
-  display: none;
-}
-
 @media screen and (min-width: globals.$desktop-screen) {
   .route-container {
     max-height: 100vh;
