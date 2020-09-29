@@ -1,38 +1,57 @@
-import React, { useState } from 'react';
-import Hamburger from './Hamburger';
-import HomeButton from '../Buttons/HomeButton';
-import AboutButton from '../Buttons/AboutButton';
-import ProjectsButton from '../Buttons/ProjectsButton';
-import ExperienceButton from '../Buttons/ExperienceButton';
-import ContactButton from '../Buttons/ContactButton';
-import './Navbar.scss';
+import React, { useState } from "react";
+import Hamburger from "./Hamburger";
+import HomeButton from "../Buttons/HomeButton";
+import AboutButton from "../Buttons/AboutButton";
+import ProjectsButton from "../Buttons/ProjectsButton";
+import ExperienceButton from "../Buttons/ExperienceButton";
+import ContactButton from "../Buttons/ContactButton";
+import "./Navbar.scss";
+import propTypes from 'prop-types';
 
-const Navbar = () => {
-  const [ menuExpanded, setMenuExpanded ] = useState( false );
-  const pathName = window.location.pathname;
-  const path = pathName === '/' ? 'home' : pathName.substr( 1 );
-  const [ activeItem, setActiveItem ] = useState( path );
+const Navbar = ({activeItem, handleClick}) => {
+  const [menuExpanded, setMenuExpanded] = useState(false);
 
-  const handleMenuToggle = ( e ) => {
+  const handleMenuToggle = (e) => {
     e.stopPropagation();
-    document.getElementById( 'navbar' ).classList.toggle( 'change' );
-    setMenuExpanded( !menuExpanded );
-  }
-
-  const handleClick = ( e, name ) => {
-    setActiveItem( name )
+    document.getElementById("navbar").classList.toggle("change");
+    setMenuExpanded(!menuExpanded);
   };
 
   return (
-    <nav id='navbar'>
-      <HomeButton name='home' onClick={handleClick} active={activeItem === 'home'} size={30} />
-      <AboutButton name='about' onClick={handleClick} active={activeItem === 'about'} size={30} />
-      <ProjectsButton name='projects' onClick={handleClick} active={activeItem === 'projects'} size={30} />
-      <ExperienceButton name='experience' onClick={handleClick} active={activeItem === 'experience'} size={30} />
-      <ContactButton name='contact' onClick={handleClick} active={activeItem === 'contact'} size={30} />
+    <nav id="navbar">
+      <HomeButton
+        name="home"
+        onClick={handleClick}
+        active={activeItem === "home"}
+      />
+      <AboutButton
+        name="about"
+        onClick={handleClick}
+        active={activeItem === "about"}
+      />
+      <ProjectsButton
+        name="projects"
+        onClick={handleClick}
+        active={activeItem === "projects"}
+      />
+      <ExperienceButton
+        name="experience"
+        onClick={handleClick}
+        active={activeItem === "experience"}
+      />
+      <ContactButton
+        name="contact"
+        onClick={handleClick}
+        active={activeItem === "contact"}
+      />
       <Hamburger menuExpanded={menuExpanded} handleClick={handleMenuToggle} />
     </nav>
   );
+};
+
+Navbar.propTypes = {
+  activeItem: propTypes.string.isRequired,
+  handleClick: propTypes.func.isRequired,
 }
 
 export default Navbar;

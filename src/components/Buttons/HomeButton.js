@@ -1,17 +1,23 @@
 import React from 'react';
-import { AiOutlineHome } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import HomeBlueIcon from '../../../icons/house_blue.png';
+import HomeWhiteIcon from '../../../icons/house_white.png';
 
-const HomeButton = ( { name, onClick, active, size } ) => {
-  const blue = '#0085FC';
-  const white = '#E8E8E8';
+const HomeButton = ( { name, onClick, active } ) => {
 
-  const color = active ? blue : white;
+  const src = () => {
+    if (active) {
+      return HomeBlueIcon;
+    }
+    else {
+      return HomeWhiteIcon;
+    }
+  }
 
   return (
     <Link to='/' onClick={( e ) => onClick( e, name )}>
-      <AiOutlineHome color={color} size={size} />
+      <img src={src()} />
     </Link>
   );
 }
@@ -20,7 +26,6 @@ HomeButton.propTypes = {
   name: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
   active: PropTypes.bool.isRequired,
-  size: PropTypes.number.isRequired,
 }
 
 export default HomeButton;

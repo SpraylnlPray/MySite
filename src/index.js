@@ -1,11 +1,11 @@
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import React from 'react';
 import App from './App';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
     <App text={'Hello World'} />
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById( 'root' )
 );
