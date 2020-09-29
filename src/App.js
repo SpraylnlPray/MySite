@@ -23,6 +23,7 @@ const App = () => {
 
   return (
     <div id="container">
+    <h1 className='hidden-h1'>Personal Website of Daniel Wildegger</h1>
       <Navbar handleClick={handleClick} activeItem={activeItem} />
       <Switch>
         <Route exact path="/" render={(props) => <Home {...props} handleClick={handleClick} toName='contact' />} />
