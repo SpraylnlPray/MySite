@@ -164,8 +164,8 @@ $card-height: 300px;
 }
 
 @media screen and (max-width: globals.$mobile-screen) {
-  .card:not(:first-child) {
-    margin-top: 50px;
+  .card {
+    margin: 30px 20px;
   }
 
   .card:last-child {
