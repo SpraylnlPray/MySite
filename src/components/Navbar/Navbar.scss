@@ -12,6 +12,91 @@
 }
 
 @media screen and (min-width: globals.$desktop-screen) {
+  #HomeButton {
+    content:url(../../../icons/Logos-Big/house_white.png);
+  
+    &.active {
+      content:url(../../../icons/Logos-Big/house_blue.png);
+    }
+  }
+  
+  #AboutButton {
+    content:url(../../../icons/Logos-Big/person_white.png);
+  
+    &.active {
+      content:url(../../../icons/Logos-Big/person_blue.png);
+    }
+  }
+  
+  #ProjectsButton {
+    content:url(../../../icons/Logos-Big/folders_white.png);
+  
+    &.active {
+      content:url(../../../icons/Logos-Big/folders_blue.png);
+    }
+  }
+  
+  #ExperienceButton {
+    content:url(../../../icons/Logos-Big/bag_white.png);
+  
+    &.active {
+      content:url(../../../icons/Logos-Big/bag_blue.png);
+    }
+  }
+  
+  #ContactButton {
+    content:url(../../../icons/Logos-Big/email_white.png);
+  
+    &.active {
+      content:url(../../../icons/Logos-Big/email_blue.png);
+    }
+  }
+}
+
+@media screen and (max-width: globals.$mobile-screen) {
+  #HomeButton {
+    content:url(../../../icons/Logos-Small/house_white.png);
+  
+    &.active {
+      content:url(../../../icons/Logos-Small/house_blue.png);
+    }
+  }
+  
+  #AboutButton {
+    content:url(../../../icons/Logos-Small/person_white.png);
+  
+    &.active {
+      content:url(../../../icons/Logos-Small/person_blue.png);
+    }
+  }
+  
+  #ProjectsButton {
+    content:url(../../../icons/Logos-Small/folders_white.png);
+  
+    &.active {
+      content:url(../../../icons/Logos-Small/folders_blue.png);
+    }
+  }
+  
+  #ExperienceButton {
+    content:url(../../../icons/Logos-Small/bag_white.png);
+  
+    &.active {
+      content:url(../../../icons/Logos-Small/bag_blue.png);
+    }
+  }
+  
+  #ContactButton {
+    content:url(../../../icons/Logos-Small/email_white.png);
+  
+    &.active {
+      content:url(../../../icons/Logos-Small/email_blue.png);
+    }
+  }
+}
+
+
+@media screen and (min-width: globals.$desktop-screen) {
   #navbar{
     width: 10vw;
     max-width: 180px;
@@ -32,6 +117,10 @@
   }
 
   #navbar a img {
+    width: 50px;
+    height: 50px;
+  }
+  #navbar a {
     width: 50px;
     height: 50px;
   }
@@ -67,6 +156,10 @@
   }
 
   #navbar a img {
+    width: 30px;
+    height: 30px;
+  }
+  #navbar a {
     width: 30px;
     height: 30px;
   }

@@ -16,7 +16,6 @@ const App = () => {
     const path = pathName === "/" ? "home" : pathName.substr(1);
     return path;
   }
-
   const handleClick = (e, name) => {
     setActiveItem(name);
   };

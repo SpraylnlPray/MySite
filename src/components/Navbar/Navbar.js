@@ -1,14 +1,10 @@
 import React, { useState } from "react";
 import Hamburger from "./Hamburger";
-import HomeButton from "../Buttons/HomeButton";
-import AboutButton from "../Buttons/AboutButton";
-import ProjectsButton from "../Buttons/ProjectsButton";
-import ExperienceButton from "../Buttons/ExperienceButton";
-import ContactButton from "../Buttons/ContactButton";
 import "./Navbar.scss";
-import propTypes from 'prop-types';
+import propTypes from "prop-types";
+import MenuButton from "../MenuButton";
 
-const Navbar = ({activeItem, handleClick}) => {
+const Navbar = ({ activeItem, handleClick }) => {
   const [menuExpanded, setMenuExpanded] = useState(false);
 
   const handleMenuToggle = (e) => {
@@ -19,30 +15,44 @@ const Navbar = ({activeItem, handleClick}) => {
 
   return (
     <nav id="navbar">
-      <HomeButton
+      <MenuButton
         name="home"
         onClick={handleClick}
         active={activeItem === "home"}
+        to="/"
+        id="HomeButton"
       />
-      <AboutButton
+      <MenuButton
         name="about"
         onClick={handleClick}
         active={activeItem === "about"}
+        to="/about"
+        id="AboutButton"
+        classNameLink="menu-item"
       />
-      <ProjectsButton
+      <MenuButton
         name="projects"
         onClick={handleClick}
         active={activeItem === "projects"}
+        to="/projects"
+        id="ProjectsButton"
+        classNameLink="menu-item"
       />
-      <ExperienceButton
+      <MenuButton
         name="experience"
         onClick={handleClick}
         active={activeItem === "experience"}
+        to="/experience"
+        id="ExperienceButton"
+        classNameLink="menu-item"
       />
-      <ContactButton
+      <MenuButton
         name="contact"
         onClick={handleClick}
         active={activeItem === "contact"}
+        to="/contact"
+        id="ContactButton"
+        classNameLink="menu-item"
       />
       <Hamburger menuExpanded={menuExpanded} handleClick={handleMenuToggle} />
     </nav>
@@ -52,6 +62,6 @@ const Navbar = ({activeItem, handleClick}) => {
 Navbar.propTypes = {
   activeItem: propTypes.string.isRequired,
   handleClick: propTypes.func.isRequired,
-}
+};
 
 export default Navbar;

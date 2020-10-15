@@ -5,7 +5,7 @@ import App from './App';
 
 ReactDOM.render(
   <HashRouter>
-    <App text={'Hello World'} />
+    <App />
   </HashRouter>,
   document.getElementById( 'root' )
 );

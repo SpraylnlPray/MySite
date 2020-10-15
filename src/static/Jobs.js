@@ -1,4 +1,4 @@
-const codesysLogo = require('../../icons/CODESYS-logo-standard.png');
+const codesysLogo = require('../../icons/Logos-Big/CODESYS-logo-standard.png');
 const ioetLogo = require('../../icons/ioetLogo4x6.png');
 
 const jobs = [
