@@ -51,6 +51,14 @@
       content: url(../../../icons/Logos-Big/email_blue.png);
     }
   }
+
+  // #ContactButton:after {
+  //   content: url(../../../icons/Logos-Big/email_white.png);
+
+  //   &.active {
+  //     content: url(../../../icons/Logos-Big/email_blue.png);
+  //   }
+  // }
 }
 
 @media screen and (max-width: globals.$mobile-screen) {
@@ -120,6 +128,11 @@
     height: 50px;
   }
   #navbar a {
+    width: 50px;
+    height: 50px;
+  }
+
+  #navbar a div {
     width: 50px;
     height: 50px;
   }

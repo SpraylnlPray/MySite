@@ -5,12 +5,12 @@ import PropTypes from 'prop-types';
 const MenuButton = ({ name, onClick, active, id, to, classNameLink }) => {
   return (
     <Link to={to} onClick={(e) => onClick(e, name)} className={classNameLink}>
-      <img
+      <div
         id={id}
         className={active ? 'active' : ''}
         height={30}
         width={30}
-        alt={`image`}
+        alt={`icon`}
       />
     </Link>
   );
