@@ -1,5 +1,27 @@
 @use '../../scss/globals.scss';
 
+.page-enter {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
 @media screen and (min-width: globals.$desktop-screen) {
   #home-container {
     margin-top: 40vh;
@@ -12,25 +34,25 @@
     // background-size: cover;
     // // horizontal offset, vertical offset, blur radius, shadow spread
     // box-shadow: inset 45vw 0px 35vw 0px rgba(27,31,36,0.45), inset 37vw 0px 20vw 0px rgba(27,31,36,0.60), inset 30vw 0px 25vw 0px rgba(27,31,36,0.78),
-    //             inset 25vw 0px 25vw 0px rgba(27,31,36,0.80), inset 15vw 0px 10vw 0px rgba(27,31,36,1), 
+    //             inset 25vw 0px 25vw 0px rgba(27,31,36,0.80), inset 15vw 0px 10vw 0px rgba(27,31,36,1),
     //             inset -20vw 0px 15vw 0px rgba(27,31,36,0.45), inset -17vw 0px 10vw 0px rgba(27,31,36,0.65), inset -12vw 0px 7vw 0px rgba(27,31,36,0.8),
     //             inset -10vw 0px 6vw 0px rgba(27,31,36,1);
   }
- 
+
   #hi {
     font-size: 5em;
   }
-  
+
   #presentation {
-    margin-top: .7em;
+    margin-top: 0.7em;
     font-size: 2.5em;
   }
-  
+
   #skills {
     font-size: 1.1em;
-    margin-top: .5em;
+    margin-top: 0.5em;
   }
-  
+
   #touch-button {
     margin-top: 1.5em;
     text-decoration: none;
@@ -50,7 +72,7 @@
   #home-container {
     box-sizing: border-box;
     padding-top: 33vh;
-    padding-left: 25px;;
+    padding-left: 25px;
     height: calc(100vh - #{globals.$navbar-mobile-height});
     // background-image: url('../../../images/background-try.jpg');
     // background-position: 220vw -200px;
@@ -58,13 +80,13 @@
     // box-shadow: inset 85vw 0px 20vw 0px rgba(27,31,36,0.3), inset 65vw 0px 15vw 0px rgba(27,31,36,0.50), inset 50vw 0px 15vw 0px rgba(27,31,36,0.70),
     //             inset 35vw 0px 15vw 0px rgba(27,31,36,0.80), inset 20vw 0px 15vw 0px rgba(27,31,36,0.90), inset 10vw 0px 15vw 0px rgba(27,31,36,1);
   }
-  
+
   #hi {
     margin: 0;
     font-size: 1cm;
     font-weight: 1000;
   }
-  
+
   #presentation {
     letter-spacing: -2px;
     font-size: x-large;
@@ -72,13 +94,13 @@
     line-height: 28px;
     font-weight: 100;
   }
-  
+
   #skills {
     margin-top: 15px;
     margin-right: 11%;
     line-height: 22px;
   }
-  
+
   #touch-button {
     background-color: globals.$background-color;
     border: 1px solid globals.$button-border-color;

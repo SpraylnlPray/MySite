@@ -1,0 +1,13 @@
+@use '../../scss/globals.scss';
+
+@media screen and (min-width: globals.$desktop-screen) {
+  .loading-wrapper {
+    background-color: globals.$navbar-color;
+    width: 100%;
+    font-size: 3em;
+    letter-spacing: -0.05cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

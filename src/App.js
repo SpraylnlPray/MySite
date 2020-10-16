@@ -1,6 +1,8 @@
 import React, { lazy, Suspense, useState } from 'react';
+import { CSSTransition } from 'react-transition-group';
 import Navbar from './components/Navbar/Navbar';
-import { Route, Switch } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+import Loading from './components/Loading/Loading';
 import './scss/App.scss';
 
 const Home = lazy(() => import('./components/Home/Home'));
@@ -17,30 +19,36 @@ const App = () => {
     const path = pathName === '/' ? 'home' : pathName.substr(1);
     return path;
   }
-  const handleClick = (e, name) => {
+  const handleClick = (name) => {
     setActiveItem(name);
   };
 
   return (
     <div id='container'>
       <Navbar handleClick={handleClick} activeItem={activeItem} />
-      <Suspense fallback={<div>Loading...</div>}>
-        <Switch>
-          <Route
-            exact
-            path='/'
-            render={(props) => (
-              <Home {...props} handleClick={handleClick} toName='contact' />
-            )}
-          />
-          <Route path='/about' component={About} />
-          <Route path='/projects' component={Projects} />
-          <Route path='/experience' component={Experience} />
-          <Route path='/contact' component={Contact} />
-        </Switch>
+      <Suspense fallback={<FallBack />}>
+        <Route
+          exact
+          path='/'
+          render={(props) => (
+            <Home {...props} handleClick={handleClick} toName='contact' />
+          )}
+        />
+        <Route path='/about' component={About} />
+        <Route path='/projects' component={Projects} />
+        <Route path='/experience' component={Experience} />
+        <Route path='/contact' component={Contact} />
       </Suspense>
     </div>
   );
 };
 
 export default App;
+
+const FallBack = () => {
+  return (
+    <CSSTransition timeout={300} in={true} classNames='page'>
+      <Loading />
+    </CSSTransition>
+  );
+};

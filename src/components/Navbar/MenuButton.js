@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const MenuButton = ({ name, onClick, active, id, to, classNameLink }) => {
   return (
-    <Link to={to} onClick={(e) => onClick(e, name)} className={classNameLink}>
+    <Link to={to} onClick={() => onClick(name)} className={classNameLink}>
       <div
         id={id}
         className={active ? 'active' : ''}
