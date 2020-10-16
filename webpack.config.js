@@ -10,7 +10,7 @@ dotenv.config().parsed;
 const paths = [
   {
     path: '/',
-    lastmod: '2020-16-10',
+    lastmod: '2020-10-16',
     priority: '0.6',
     changefreq: 'monthly',
   },
