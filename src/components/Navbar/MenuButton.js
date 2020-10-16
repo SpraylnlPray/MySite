@@ -1,11 +1,17 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const MenuButton = ({ name, onClick, active, id, to, classNameLink }) => {
-  return(
+  return (
     <Link to={to} onClick={(e) => onClick(e, name)} className={classNameLink}>
-      <img id={id} className={active ? "active" : ""} />
+      <img
+        id={id}
+        className={active ? 'active' : ''}
+        height={30}
+        width={30}
+        alt={id}
+      />
     </Link>
   );
 };
@@ -17,6 +23,6 @@ MenuButton.propTypes = {
   id: PropTypes.string.isRequired,
   to: PropTypes.string.isRequired,
   classNameLink: PropTypes.string,
-}
+};
 
 export default MenuButton;

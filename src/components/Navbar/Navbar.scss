@@ -13,91 +13,90 @@
 
 @media screen and (min-width: globals.$desktop-screen) {
   #HomeButton {
-    content:url(../../../icons/Logos-Big/house_white.png);
-  
+    content: url(../../../icons/Logos-Big/house_white.png);
+
     &.active {
-      content:url(../../../icons/Logos-Big/house_blue.png);
+      content: url(../../../icons/Logos-Big/house_blue.png);
     }
   }
-  
+
   #AboutButton {
-    content:url(../../../icons/Logos-Big/person_white.png);
-  
+    content: url(../../../icons/Logos-Big/person_white.png);
+
     &.active {
-      content:url(../../../icons/Logos-Big/person_blue.png);
+      content: url(../../../icons/Logos-Big/person_blue.png);
     }
   }
-  
+
   #ProjectsButton {
-    content:url(../../../icons/Logos-Big/folders_white.png);
-  
+    content: url(../../../icons/Logos-Big/folders_white.png);
+
     &.active {
-      content:url(../../../icons/Logos-Big/folders_blue.png);
+      content: url(../../../icons/Logos-Big/folders_blue.png);
     }
   }
-  
+
   #ExperienceButton {
-    content:url(../../../icons/Logos-Big/bag_white.png);
-  
+    content: url(../../../icons/Logos-Big/bag_white.png);
+
     &.active {
-      content:url(../../../icons/Logos-Big/bag_blue.png);
+      content: url(../../../icons/Logos-Big/bag_blue.png);
     }
   }
-  
+
   #ContactButton {
-    content:url(../../../icons/Logos-Big/email_white.png);
-  
+    content: url(../../../icons/Logos-Big/email_white.png);
+
     &.active {
-      content:url(../../../icons/Logos-Big/email_blue.png);
+      content: url(../../../icons/Logos-Big/email_blue.png);
     }
   }
 }
 
 @media screen and (max-width: globals.$mobile-screen) {
   #HomeButton {
-    content:url(../../../icons/Logos-Small/house_white.png);
-  
+    content: url(../../../icons/Logos-Small/house_white.png);
+
     &.active {
-      content:url(../../../icons/Logos-Small/house_blue.png);
+      content: url(../../../icons/Logos-Small/house_blue.png);
     }
   }
-  
+
   #AboutButton {
-    content:url(../../../icons/Logos-Small/person_white.png);
-  
+    content: url(../../../icons/Logos-Small/person_white.png);
+
     &.active {
-      content:url(../../../icons/Logos-Small/person_blue.png);
+      content: url(../../../icons/Logos-Small/person_blue.png);
     }
   }
-  
+
   #ProjectsButton {
-    content:url(../../../icons/Logos-Small/folders_white.png);
-  
+    content: url(../../../icons/Logos-Small/folders_white.png);
+
     &.active {
-      content:url(../../../icons/Logos-Small/folders_blue.png);
+      content: url(../../../icons/Logos-Small/folders_blue.png);
     }
   }
-  
+
   #ExperienceButton {
-    content:url(../../../icons/Logos-Small/bag_white.png);
-  
+    content: url(../../../icons/Logos-Small/bag_white.png);
+
     &.active {
-      content:url(../../../icons/Logos-Small/bag_blue.png);
+      content: url(../../../icons/Logos-Small/bag_blue.png);
     }
   }
-  
+
   #ContactButton {
-    content:url(../../../icons/Logos-Small/email_white.png);
-  
+    content: url(../../../icons/Logos-Small/email_white.png);
+
     &.active {
-      content:url(../../../icons/Logos-Small/email_blue.png);
+      content: url(../../../icons/Logos-Small/email_blue.png);
     }
   }
 }
 
-
 @media screen and (min-width: globals.$desktop-screen) {
-  #navbar{
+  #navbar {
     width: 10vw;
     max-width: 180px;
     min-width: 100px;
@@ -107,20 +106,16 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   #navbar a img {
-    width: 50px;
-    height: 50px;
-  }
-  #navbar a {
     width: 50px;
     height: 50px;
   }
@@ -133,33 +128,29 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     padding: 0 10px;
   }
-  
-  #navbar.change .menu-item  {
+
+  #navbar.change .menu-item {
     opacity: 100;
     visibility: visible;
   }
-  
+
   #navbar .menu-item {
     -webkit-transition-duration: 0.3s;
-         -o-transition-duration: 0.3s;
-            transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
     opacity: 0;
     visibility: hidden;
     pointer-events: visible;
   }
 
   #navbar a img {
-    width: 30px;
-    height: 30px;
-  }
-  #navbar a {
     width: 30px;
     height: 30px;
   }
