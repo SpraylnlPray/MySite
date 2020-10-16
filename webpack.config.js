@@ -87,6 +87,41 @@ module.exports = () => {
         patterns: [
           { from: './robots.txt', to: './robots.txt' },
           { from: './icons/favicon.png', to: './icons/favicon.png' },
+          {
+            from: './icons/browserconfig.xml',
+            to: './icons/browserconfig.xml',
+          },
+          { from: './icons/site.webmanifest', to: './icons/site.webmanifest' },
+          {
+            from: './icons/mstile-150x150.png',
+            to: './icons/mstile-150x150.png',
+          },
+          {
+            from: './icons/safari-pinned-tab.svg',
+            to: './icons/safari-pinned-tab.svg',
+          },
+          { from: './icons/favicon.ico', to: './icons/favicon.ico' },
+          {
+            from: './icons/favicon-32x32.png',
+            to: './icons/favicon-32x32.png',
+          },
+          {
+            from: './icons/favicon-16x16.png',
+            to: './icons/favicon-16x16.png',
+          },
+          {
+            from: './icons/android-chrome-192x192.png',
+            to: './icons/android-chrome-192x192.png',
+          },
+          {
+            from: './icons/android-chrome-512x512.png',
+            to: './icons/android-chrome-512x512.png',
+          },
+          {
+            from: './icons/android-chrome-512x512.png',
+            to: './icons/android-chrome-512x512.png',
+          },
+          { from: './icons/apple-touch-icon', to: './icons/apple-touch-icon' },
         ],
       }),
     ],
