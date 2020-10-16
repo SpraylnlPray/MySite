@@ -86,10 +86,6 @@ module.exports = () => {
       new CopyWebpackPlugin({
         patterns: [
           { from: './robots.txt', to: './robots.txt' },
-          {
-            from: './icons/favicon-small.png',
-            to: './icons/favicon-small.png',
-          },
           { from: './icons/favicon.png', to: './icons/favicon.png' },
         ],
       }),
