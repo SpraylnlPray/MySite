@@ -6,20 +6,18 @@ const About = () => {
   return (
     <div id='about-container'>
       <div>
-        <div className='about-header'>
-          Facts
-        </div>
+        <div className='about-header'>Facts</div>
         <ul className='list'>
           <li>23 years old</li>
           <li>Passionate Learner</li>
-          <li><GoLocation size={12} color={'#E8E8E8'}/> Bavaria, Germany</li>
+          <li>
+            <GoLocation size={12} color={'#E8E8E8'} /> Bavaria, Germany
+          </li>
           <li>Fluent in GE, EN, ES</li>
         </ul>
       </div>
       <div id='hobbies-container'>
-        <div className='about-header'>
-          Hobbies
-        </div>
+        <div className='about-header'>Hobbies</div>
         <ul className='list'>
           <li>Hiking</li>
           <li>Playing Piano</li>
@@ -29,6 +27,6 @@ const About = () => {
       </div>
     </div>
   );
-}
+};
 
 export default About;

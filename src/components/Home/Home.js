@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import './Home.scss';
 import propTypes from 'prop-types';
 
-// alert('hello');
-
 const Home = ({ handleClick, toName: name }) => {
   return (
     <div id='home-container'>

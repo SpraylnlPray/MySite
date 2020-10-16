@@ -1,8 +1,7 @@
 import React, { lazy, Suspense, useState } from 'react';
-import { CSSTransition } from 'react-transition-group';
-import Navbar from './components/Navbar/Navbar';
 import { Route } from 'react-router-dom';
 import Loading from './components/Loading/Loading';
+import Navbar from './components/Navbar/Navbar';
 import './scss/App.scss';
 
 const Home = lazy(() => import('./components/Home/Home'));
@@ -26,7 +25,7 @@ const App = () => {
   return (
     <div id='container'>
       <Navbar handleClick={handleClick} activeItem={activeItem} />
-      <Suspense fallback={<FallBack />}>
+      <Suspense fallback={<Loading />}>
         <Route
           exact
           path='/'
@@ -44,11 +43,3 @@ const App = () => {
 };
 
 export default App;
-
-const FallBack = () => {
-  return (
-    <CSSTransition timeout={300} in={true} classNames='page'>
-      <Loading />
-    </CSSTransition>
-  );
-};
