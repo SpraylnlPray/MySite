@@ -10,7 +10,7 @@ const MenuButton = ({ name, onClick, active, id, to, classNameLink }) => {
         className={active ? 'active' : ''}
         height={30}
         width={30}
-        alt={`${id}-image`}
+        alt={`image`}
       />
     </Link>
   );
