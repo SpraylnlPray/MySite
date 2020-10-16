@@ -121,7 +121,10 @@ module.exports = () => {
             from: './icons/android-chrome-512x512.png',
             to: './icons/android-chrome-512x512.png',
           },
-          { from: './icons/apple-touch-icon', to: './icons/apple-touch-icon' },
+          {
+            from: './icons/apple-touch-icon.png',
+            to: './icons/apple-touch-icon.png',
+          },
         ],
       }),
     ],
