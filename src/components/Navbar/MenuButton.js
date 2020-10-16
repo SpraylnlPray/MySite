@@ -8,8 +8,8 @@ const MenuButton = ({ name, onClick, active, id, to, classNameLink }) => {
       <img
         id={id}
         className={active ? 'active' : ''}
-        height={30}
-        width={30}
+        // height={30}
+        // width={30}
         alt={id}
       />
     </Link>
