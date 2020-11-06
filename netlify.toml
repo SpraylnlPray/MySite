@@ -1,7 +1,7 @@
 [build]
-  publish = "./dir"
+  publish = "./build"
   command = "echo 'default context'"
 
 [context.production]
-  publish = "./dir"
-  command = "npm run build_app"
+  publish = "./build"
+  command = "npm run build"
