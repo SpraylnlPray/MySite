@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-@use '../../scss/globals.scss';
+@import "../../scss/globals.scss";
 
 #hamburger {
   display: -webkit-box;
@@ -13,31 +13,33 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #hamburger > div {
   width: 28px;
   height: 2px;
-  background-color: globals.$font-color;
+  background-color: $font-color;
   margin: 4px 0;
   border-radius: 1.5px;
 }
 
-#bar1, #bar2, #bar3 {
+#bar1,
+#bar2,
+#bar3 {
   -webkit-transition-duration: 0.3s;
-       -o-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
 .change #bar1 {
   -webkit-transform: translate(0, 10px) rotate(-45deg);
-      -ms-transform: translate(0, 10px) rotate(-45deg);
-          transform: translate(0, 10px) rotate(-45deg);
+  -ms-transform: translate(0, 10px) rotate(-45deg);
+  transform: translate(0, 10px) rotate(-45deg);
 }
 
 .change #bar2 {
@@ -46,11 +48,11 @@
 
 .change #bar3 {
   -webkit-transform: translate(0, -10px) rotate(45deg);
-      -ms-transform: translate(0, -10px) rotate(45deg);
-          transform: translate(0, -10px) rotate(45deg);
+  -ms-transform: translate(0, -10px) rotate(45deg);
+  transform: translate(0, -10px) rotate(45deg);
 }
 
-@media screen and (min-width:globals.$desktop-screen) { 
+@media screen and (min-width: $desktop-screen) {
   #hamburger {
     display: none;
   }

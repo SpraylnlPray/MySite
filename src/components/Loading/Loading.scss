@@ -1,23 +1,23 @@
-@use '../../scss/globals.scss';
+@import "../../scss/globals.scss";
 
 .loading-wrapper {
-  background-color: globals.$navbar-color;
+  background-color: $navbar-color;
   display: flex;
   align-items: center;
   justify-content: center;
   letter-spacing: -0.05cm;
 }
 
-@media screen and (min-width: globals.$desktop-screen) {
+@media screen and (min-width: $desktop-screen) {
   .loading-wrapper {
     font-size: 3em;
     width: 90vw;
   }
 }
 
-@media screen and (max-width: globals.$mobile-screen) {
+@media screen and (max-width: $mobile-screen) {
   .loading-wrapper {
-    min-height: calc(100vh - #{globals.$navbar-mobile-height});
+    min-height: calc(100vh - #{$navbar-mobile-height});
     font-size: 2em;
   }
 }

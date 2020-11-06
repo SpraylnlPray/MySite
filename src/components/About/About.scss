@@ -1,4 +1,4 @@
-@use '../../scss/globals.scss';
+@import "../../scss/globals.scss";
 
 .list {
   list-style-position: inside;
@@ -7,46 +7,47 @@
   margin-bottom: 5vh;
 }
 
-@media screen and (min-width: globals.$desktop-screen) {
+@media screen and (min-width: $desktop-screen) {
   #about-container {
-    margin-top: 40vh;
+    margin-top: 30vh;
     margin-left: 7vw;
+    padding-bottom: 10vh;
   }
-  
+
   .about-header {
     font-size: 4.3em;
   }
-  
+
   .list {
     font-size: 1.3em;
-    letter-spacing: .07cm;
+    letter-spacing: 0.07cm;
     line-height: 1.2em;
   }
-  
+
   #hobbies-container {
     margin-top: 5vh;
   }
 }
 
-@media screen and (max-width: globals.$mobile-screen) {
+@media screen and (max-width: $mobile-screen) {
   #about-container {
     box-sizing: border-box;
     padding-top: 33vh;
     padding-left: 25px;
     line-height: 22px;
-    height: calc(100vh - #{globals.$navbar-mobile-height});
+    height: calc(100vh - #{$navbar-mobile-height});
   }
-  
+
   .about-header {
     font-size: 1cm;
     font-weight: 1000;
   }
-  
+
   .list {
     font-size: 16px;
     margin-top: 12px;
   }
-  
+
   #hobbies-container {
     margin-top: 35px;
   }

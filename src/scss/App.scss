@@ -1,4 +1,4 @@
-@use './globals';
+@import "./globals.scss";
 
 * {
   margin: 0;
@@ -6,10 +6,10 @@
 }
 
 #container {
-  background-color: globals.$background-color;
+  background-color: $background-color;
   min-height: 100vh;
-  color: globals.$font-color;
-  font-family: globals.$font-stack;
+  color: $font-color;
+  font-family: $font-stack;
 }
 
 .active-link-class {
@@ -17,7 +17,7 @@
   background-color: green;
 }
 
-@media screen and (min-width: globals.$desktop-screen) {
+@media screen and (min-width: $desktop-screen) {
   #container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -29,7 +29,7 @@
   display: block !important;
 }
 
-@media screen and (min-width: globals.$desktop-screen) {
+@media screen and (min-width: $desktop-screen) {
   .route-container {
     max-height: 100vh;
     padding: 7vh 7vw 7vh 7vw;
@@ -53,14 +53,14 @@
   }
 }
 
-@media screen and (max-width: globals.$mobile-screen) {
+@media screen and (max-width: $mobile-screen) {
   #container {
     min-height: 100vh;
   }
 
   .route-container {
-    margin-top: globals.$navbar-mobile-height;
-    height: calc(100vh - #{globals.$navbar-mobile-height});
+    margin-top: $navbar-mobile-height;
+    height: calc(100vh - #{$navbar-mobile-height});
     margin: auto 10px;
   }
 

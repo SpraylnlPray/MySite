@@ -1,10 +1,10 @@
-@use '../../scss/globals.scss';
+@import "../../scss/globals.scss";
 
-@media screen and (min-width: globals.$desktop-screen) {
+@media screen and (min-width: $desktop-screen) {
   #home-container {
-    margin-top: 40vh;
+    margin-top: 35vh;
     margin-left: 7vw;
-    margin-bottom: 5vh;
+    margin-bottom: 10vh;
     width: 60vw;
     // background-image: url('../../../images/background-try.jpg');
     // background-image: url('../../../images/background-try-2.jpg');
@@ -34,24 +34,24 @@
   #touch-button {
     margin-top: 1.5em;
     text-decoration: none;
-    background-color: globals.$background-color;
-    border: 1px solid globals.$button-border-color;
-    color: globals.$button-letter-color;
+    background-color: $background-color;
+    border: 1px solid $button-border-color;
+    color: $button-letter-color;
     outline: none;
     font-size: 1.5em;
     letter-spacing: -0.02cm;
     font-weight: 500;
     padding: 12px 18px;
-    font-family: globals.$font-stack;
+    font-family: $font-stack;
   }
 }
 
-@media screen and (max-width: globals.$mobile-screen) {
+@media screen and (max-width: $mobile-screen) {
   #home-container {
     box-sizing: border-box;
     padding-top: 33vh;
     padding-left: 25px;
-    height: calc(100vh - #{globals.$navbar-mobile-height});
+    height: calc(100vh - #{$navbar-mobile-height});
     // background-image: url('../../../images/background-try.jpg');
     // background-position: 220vw -200px;
     // // horizontal offset, vertical offset, blur radius, shadow spread
@@ -80,15 +80,15 @@
   }
 
   #touch-button {
-    background-color: globals.$background-color;
-    border: 1px solid globals.$button-border-color;
-    color: globals.$button-letter-color;
+    background-color: $background-color;
+    border: 1px solid $button-border-color;
+    color: $button-letter-color;
     text-decoration: none;
     border-radius: 1.5px;
     text-align: center;
     font-weight: 400;
     font-size: 20px;
-    font-family: globals.$font-stack;
+    font-family: $font-stack;
     letter-spacing: -1px;
     padding: 12px 18px;
     margin-top: 20px;

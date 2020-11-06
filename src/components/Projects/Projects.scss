@@ -4,19 +4,21 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
-@use '../../scss/globals.scss';
+@import "../../scss/globals.scss";
 
 #projects-container {
-  color: globals.$font-color;
-  font-family: globals.$font-stack;
+  color: $font-color;
+  font-family: $font-stack;
 }
 
-#projects-caption a, .project-container a {
-  color: globals.$font-color;
+#projects-caption a,
+.project-container a {
+  color: $font-color;
 }
 
-#projects-caption a:visited, .project-container a:visited {
-  color: globals.$font-color;
+#projects-caption a:visited,
+.project-container a:visited {
+  color: $font-color;
 }
 
 .project-description {
@@ -24,15 +26,15 @@
 }
 
 .project-more-button {
-  border: 1px solid globals.$button-border-color;
-  color: globals.$button-letter-color;
+  border: 1px solid $button-border-color;
+  color: $button-letter-color;
 }
 
 a {
-  color: globals.$font-color;
+  color: $font-color;
 }
 
-@media screen and (min-width: globals.$desktop-screen) {
+@media screen and (min-width: $desktop-screen) {
   #projects-container {
     margin: 20vh 5vw 5vh 7vw;
     width: 60vw;
@@ -48,14 +50,14 @@ a {
 
   #projects-list {
     margin-top: 2em;
-    padding-right: .8em;
+    padding-right: 0.8em;
     max-height: calc(100% - 4.3em - 1.15em - 3em);
     overflow: auto;
   }
 
   #projects-list {
     scrollbar-width: 7px;
-    scrollbar-color: globals.$navbar-color;
+    scrollbar-color: $navbar-color;
   }
 
   #projects-list::-webkit-scrollbar {
@@ -63,12 +65,12 @@ a {
   }
 
   #projects-list::-webkit-scrollbar-track {
-    background: #0F0F0F;
+    background: #0f0f0f;
     border-radius: 20px;
   }
 
   #projects-list::-webkit-scrollbar-thumb {
-    background-color: globals.$active-color;
+    background-color: $active-color;
     border-radius: 20px;
   }
 
@@ -81,8 +83,8 @@ a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .project-title {
@@ -91,8 +93,8 @@ a {
   }
 
   .project-more-button {
-    margin-left: .6em;
-    margin-top: .2em;
+    margin-left: 0.6em;
+    margin-top: 0.2em;
     padding: 3px 7px;
     border-radius: 2px;
     font-size: 1.1em;
@@ -103,11 +105,11 @@ a {
   }
 
   .project-sub {
-    margin-top: .3em;
+    margin-top: 0.3em;
     font-size: 1.15em;
   }
 
   .project-description {
-    margin-top: .2em;
+    margin-top: 0.2em;
   }
 }
