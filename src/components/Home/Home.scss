@@ -2,19 +2,24 @@
 
 @media screen and (min-width: $desktop-screen) {
   #home-container {
-    margin-top: 35vh;
-    margin-left: 7vw;
-    margin-bottom: 10vh;
-    width: 60vw;
-    // background-image: url('../../../images/background-try.jpg');
-    // background-image: url('../../../images/background-try-2.jpg');
-    // background-position: center;
-    // background-size: cover;
+    padding-top: 35vh;
+    padding-left: 7vw;
+    padding-bottom: 10vh;
+    width: 84vw;
+    background-image: url(../../images/IMG_2877.jpg);
+    // #teamoooooooooooooooooooooooooo
+    background-position: center;
+    background-size: cover;
     // // horizontal offset, vertical offset, blur radius, shadow spread
-    // box-shadow: inset 45vw 0px 35vw 0px rgba(27,31,36,0.45), inset 37vw 0px 20vw 0px rgba(27,31,36,0.60), inset 30vw 0px 25vw 0px rgba(27,31,36,0.78),
-    //             inset 25vw 0px 25vw 0px rgba(27,31,36,0.80), inset 15vw 0px 10vw 0px rgba(27,31,36,1),
-    //             inset -20vw 0px 15vw 0px rgba(27,31,36,0.45), inset -17vw 0px 10vw 0px rgba(27,31,36,0.65), inset -12vw 0px 7vw 0px rgba(27,31,36,0.8),
-    //             inset -10vw 0px 6vw 0px rgba(27,31,36,1);
+    box-shadow: inset 35vw 0px 35vw 0px rgba(27, 31, 36, 0.45),
+      inset 33vw 0px 20vw 0px rgba(27, 31, 36, 0.6),
+      inset 30vw 0px 25vw 0px rgba(27, 31, 36, 0.78),
+      inset 25vw 0px 25vw 0px rgba(27, 31, 36, 0.8),
+      inset 15vw 0px 10vw 0px rgba(27, 31, 36, 1),
+      inset -27vw 0px 15vw 0px rgba(27, 31, 36, 0.45),
+      inset -24vw 0px 10vw 0px rgba(27, 31, 36, 0.65),
+      inset -19vw 0px 7vw 0px rgba(27, 31, 36, 0.8),
+      inset -15vw 0px 6vw 0px rgba(27, 31, 36, 1);
   }
 
   #hi {
@@ -53,10 +58,17 @@
     padding-left: 25px;
     height: calc(100vh - #{$navbar-mobile-height});
     // background-image: url('../../../images/background-try.jpg');
-    // background-position: 220vw -200px;
-    // // horizontal offset, vertical offset, blur radius, shadow spread
-    // box-shadow: inset 85vw 0px 20vw 0px rgba(27,31,36,0.3), inset 65vw 0px 15vw 0px rgba(27,31,36,0.50), inset 50vw 0px 15vw 0px rgba(27,31,36,0.70),
-    //             inset 35vw 0px 15vw 0px rgba(27,31,36,0.80), inset 20vw 0px 15vw 0px rgba(27,31,36,0.90), inset 10vw 0px 15vw 0px rgba(27,31,36,1);
+    // background-image: url(../../images/IMG_2840.jpg);
+    // background-position: -5vw -35vh;
+    // background-position: center;
+    // background-size: 150%;
+    // horizontal offset, vertical offset, blur radius, shadow spread
+    // box-shadow: inset 85vw 0px 20vw 0px rgba(27, 31, 36, 0.3),
+    //   inset 65vw 0px 15vw 0px rgba(27, 31, 36, 0.5),
+    //   inset 50vw 0px 15vw 0px rgba(27, 31, 36, 0.7),
+    //   inset 35vw 0px 15vw 0px rgba(27, 31, 36, 0.8),
+    //   inset 20vw 0px 15vw 0px rgba(27, 31, 36, 0.9),
+    //   inset 10vw 0px 15vw 0px rgba(27, 31, 36, 1);
   }
 
   #hi {
