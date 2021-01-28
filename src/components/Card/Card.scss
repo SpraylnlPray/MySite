@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-@import "../../scss/globals.scss";
+@import '../../scss/globals.scss';
 
 $distance: 1200px;
 $roation-time: 0.4s;
@@ -119,6 +119,11 @@ $card-height: 300px;
 
 .card__re__button {
   text-decoration: none;
+}
+
+.card__buttons__area {
+  display: flex !important;
+  justify-content: space-around !important;
 }
 
 @media screen and (min-width: $desktop-screen) {

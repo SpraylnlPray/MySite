@@ -1,4 +1,4 @@
-@import "./globals.scss";
+@import './globals.scss';
 
 * {
   margin: 0;
@@ -39,14 +39,16 @@
   }
 
   .route-top-container {
-    max-height: 110px;
+    // max-height: 110px;
   }
 
   .route-header {
     font-size: 4.3em;
+    height: auto;
   }
 
   .route-caption {
+    margin-bottom: 10px;
     margin-top: 10px;
     font-size: 1.2em;
     color: #cfcfcf;

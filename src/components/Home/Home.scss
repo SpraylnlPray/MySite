@@ -1,4 +1,4 @@
-@import "../../scss/globals.scss";
+@import '../../scss/globals.scss';
 
 @media screen and (min-width: $desktop-screen) {
   #home-container {
@@ -57,18 +57,6 @@
     padding-top: 33vh;
     padding-left: 25px;
     height: calc(100vh - #{$navbar-mobile-height});
-    // background-image: url('../../../images/background-try.jpg');
-    // background-image: url(../../images/IMG_2840.jpg);
-    // background-position: -5vw -35vh;
-    // background-position: center;
-    // background-size: 150%;
-    // horizontal offset, vertical offset, blur radius, shadow spread
-    // box-shadow: inset 85vw 0px 20vw 0px rgba(27, 31, 36, 0.3),
-    //   inset 65vw 0px 15vw 0px rgba(27, 31, 36, 0.5),
-    //   inset 50vw 0px 15vw 0px rgba(27, 31, 36, 0.7),
-    //   inset 35vw 0px 15vw 0px rgba(27, 31, 36, 0.8),
-    //   inset 20vw 0px 15vw 0px rgba(27, 31, 36, 0.9),
-    //   inset 10vw 0px 15vw 0px rgba(27, 31, 36, 1);
   }
 
   #hi {

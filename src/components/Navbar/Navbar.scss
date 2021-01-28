@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-@import "../../scss/globals.scss";
+@import '../../scss/globals.scss';
 
 #navbar {
   background-color: $navbar-color;
@@ -13,42 +13,168 @@
 
 @media screen and (min-width: $desktop-screen) {
   #HomeButton {
-    content: url(../../icons/Logos-Big/house_white.png);
+    text-decoration: none;
+    width: fit-content !important;
+    &.inactive {
+      div {
+        display: block;
+        content: url(../../icons/Logos-Big/house_white.png);
+        width: 50px;
+      }
+      span {
+        display: none;
+      }
+    }
 
     &.active {
-      content: url(../../icons/Logos-Big/house_blue.png);
+      height: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      div {
+        display: none;
+        content: none;
+      }
+      span {
+        letter-spacing: 1px;
+        display: block;
+        color: $active-color;
+        text-transform: uppercase;
+        width: fit-content;
+      }
     }
   }
 
   #AboutButton {
-    content: url(../../icons/Logos-Big/person_white.png);
+    text-decoration: none;
+    width: fit-content !important;
+    &.inactive {
+      div {
+        display: block;
+        content: url(../../icons/Logos-Big/person_white.png);
+        width: 50px;
+      }
+      span {
+        display: none;
+      }
+    }
 
     &.active {
-      content: url(../../icons/Logos-Big/person_blue.png);
+      height: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      div {
+        display: none;
+        content: none;
+      }
+      span {
+        display: block;
+        letter-spacing: 1px;
+        color: $active-color;
+        text-transform: uppercase;
+        width: fit-content;
+      }
     }
   }
 
   #ProjectsButton {
-    content: url(../../icons/Logos-Big/folders_white.png);
+    text-decoration: none;
+    width: fit-content !important;
+    &.inactive {
+      div {
+        display: block;
+        content: url(../../icons/Logos-Big/folders_white.png);
+        width: 50px;
+      }
+      span {
+        display: none;
+      }
+    }
 
     &.active {
-      content: url(../../icons/Logos-Big/folders_blue.png);
+      height: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      div {
+        display: none;
+        content: none;
+      }
+      span {
+        display: block;
+        letter-spacing: 1px;
+        color: $active-color;
+        text-transform: uppercase;
+        width: fit-content;
+      }
     }
   }
 
   #ExperienceButton {
-    content: url(../../icons/Logos-Big/bag_white.png);
+    text-decoration: none;
+    width: fit-content !important;
+    &.inactive {
+      div {
+        display: block;
+        content: url(../../icons/Logos-Big/bag_white.png);
+        width: 50px;
+      }
+      span {
+        display: none;
+      }
+    }
 
     &.active {
-      content: url(../../icons/Logos-Big/bag_blue.png);
+      height: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      div {
+        display: none;
+        content: none;
+      }
+      span {
+        word-break: break-all;
+        letter-spacing: 1px;
+        display: block;
+        color: $active-color;
+        text-transform: uppercase;
+        width: fit-content;
+      }
     }
   }
 
   #ContactButton {
-    content: url(../../icons/Logos-Big/email_white.png);
+    text-decoration: none;
+    width: fit-content !important;
+    &.inactive {
+      div {
+        display: block;
+        content: url(../../icons/Logos-Big/email_white.png);
+        width: 50px;
+      }
+      span {
+        display: none;
+      }
+    }
 
     &.active {
-      content: url(../../icons/Logos-Big/email_blue.png);
+      height: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      div {
+        display: none;
+        content: none;
+      }
+      span {
+        display: block;
+        letter-spacing: 1px;
+        color: $active-color;
+        text-transform: uppercase;
+        width: fit-content;
+      }
     }
   }
 }
@@ -116,12 +242,7 @@
   }
   #navbar a {
     width: 50px;
-    height: 50px;
-  }
-
-  #navbar a div {
-    width: 50px;
-    height: 50px;
+    // height: 50px;
   }
 }
 
