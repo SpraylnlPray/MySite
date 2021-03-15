@@ -22,7 +22,7 @@ const About = () => {
           <li>Hiking</li>
           <li>Playing Piano</li>
           <li>Mountainbiking</li>
-          <li>Study Languages</li>
+          <li>Studying Languages</li>
         </ul>
       </div>
     </div>

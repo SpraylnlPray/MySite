@@ -26,7 +26,8 @@
       }
     }
 
-    &.active {
+    &.active,
+    &:hover {
       height: 50px;
       display: flex;
       flex-direction: column;
@@ -59,7 +60,8 @@
       }
     }
 
-    &.active {
+    &.active,
+    &:hover {
       height: 50px;
       display: flex;
       flex-direction: column;
@@ -92,7 +94,8 @@
       }
     }
 
-    &.active {
+    &.active,
+    &:hover {
       height: 50px;
       display: flex;
       flex-direction: column;
@@ -125,7 +128,8 @@
       }
     }
 
-    &.active {
+    &.active,
+    &:hover {
       height: 50px;
       display: flex;
       flex-direction: column;
@@ -159,7 +163,8 @@
       }
     }
 
-    &.active {
+    &.active,
+    &:hover {
       height: 50px;
       display: flex;
       flex-direction: column;

@@ -14,7 +14,10 @@ const Home = ({ handleClick, toName: name }) => {
         <br />
         from Germany.
       </div>
-      <div id='skills'>JavaScript, React, C++, C#, Apollo, GraphQL, Neo4j</div>
+      <div id='skills'>
+        JavaScript, TypeScript, Angular, React, GraphQL, <br /> Neo4j, C++, C#,
+        Unity
+      </div>
       <Link to='/contact' name='contact' onClick={() => handleClick(name)}>
         <button id='touch-button'>Get in Touch</button>
       </Link>

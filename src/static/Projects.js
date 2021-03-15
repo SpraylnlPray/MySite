@@ -6,13 +6,25 @@ const perlinImage = require('../images/PerlinNoiseFront.png');
 
 const projects = [
   {
+    key: 'moneywatch',
+    header: 'MoneyWatch',
+    time: 'Free Time',
+    frontSub: 'Personal Project',
+    backSub: '',
+    description:
+      "An application to help you keep track of your expenses and incomes. It can create a graphical overview to show you the distributions of how you spend or earn your money. Developed using Angular, Cordova and Firebase. Once published, you'll find the download link here.",
+    ref: '',
+    refText: '',
+    download: false,
+  },
+  {
     key: 'ig-clone',
     header: 'Instagram Clone',
     time: 'Free Time',
     frontSub: 'Video Course',
     backSub: '',
     description:
-      'A project to learn about Firebase, Redux(-Thunk), Expo and React Native. It contains authentication, a following, like and comment system as well as a user search. Images coming soon.',
+      'A project to learn about Firebase, Redux(-Thunk), Expo and React Native. It contains authentication, a following, like and comment system as well as a user search.',
     ref: '',
     refText: '',
     download: false,

@@ -9,7 +9,7 @@ const jobs = [
     frontSub: 'Seifen Germany',
     backSub: 'Fulltime',
     description:
-      'My first fulltime job as software developer. A more detailed description will be coming soon.',
+      "My first fulltime job as software developer. I'm working with Angular in the frontend and C++/Qt in the backend.",
     ref: 'https://www.ferchau.com/',
     download: false,
     refText: 'Web',
