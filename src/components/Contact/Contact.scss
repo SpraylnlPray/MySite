@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-@import "../../scss/globals.scss";
+@import '../../scss/globals.scss';
 
 #contact-container {
   color: $font-color;
@@ -118,6 +118,13 @@
     font-family: $font-stack;
     letter-spacing: -1px;
     padding: 12px 18px;
+    border-radius: 3px;
+    transition: background-color 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $button-hover-color;
+    }
   }
 
   #send-button:active {
@@ -136,6 +143,7 @@
 
   #error {
     border: 1px solid #d62727;
+    border-radius: 3px;
   }
 
   #success {
@@ -246,7 +254,7 @@
     border: 1px solid $button-border-color;
     color: $button-letter-color;
     text-decoration: none;
-    border-radius: 1.5px;
+    border-radius: 3px;
     text-align: center;
     font-weight: 400;
     font-size: 20px;

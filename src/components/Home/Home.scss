@@ -48,6 +48,13 @@
     font-weight: 500;
     padding: 12px 18px;
     font-family: $font-stack;
+    border-radius: 3px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $button-hover-color;
+    }
   }
 }
 
