@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const MenuButton = ({ name, onClick, active, id, to, classNameLink }) => {
-  let className = '';
+  let className = 'NavButton ';
   if (classNameLink) {
-    className = classNameLink;
+    className += classNameLink;
   }
   active ? (className += ' active') : (className += ' inactive');
   return (
