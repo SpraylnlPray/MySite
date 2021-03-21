@@ -24,7 +24,6 @@ const Home = ({ handleClick, toName: name }) => {
   };
 
   const background = () => {
-    const width = window.screen.width;
     if (width <= 750) {
       return null;
     }
