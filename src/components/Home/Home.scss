@@ -1,16 +1,52 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import '../../scss/globals.scss';
 
 @media screen and (min-width: $desktop-screen) {
   #home-container {
-    padding-top: 35vh;
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    height: 100%;
+  }
+
+  #home-background-fake {
+    display: none;
+  }
+
+  #home-container > * {
+    -ms-grid-column: 1;
+    grid-column: 1 / 1;
+    -ms-grid-row: 1;
+    grid-row: 1 / 1;
+  }
+
+  #home-main {
+    padding-top: 30vh;
     padding-left: 7vw;
     padding-bottom: 10vh;
-    width: 84vw;
-    background-image: url(../../images/IMG_2877.jpg);
-    // #teamoooooooooooooooooooooooooo
+    z-index: 2;
+  }
+
+  #home-background {
+    z-index: 1;
+    height: 100vh;
     background-position: center;
     background-size: cover;
-    // // horizontal offset, vertical offset, blur radius, shadow spread
+    -webkit-box-shadow: inset 35vw 0px 35vw 0px rgba(27, 31, 36, 0.45),
+      inset 33vw 0px 20vw 0px rgba(27, 31, 36, 0.6),
+      inset 30vw 0px 25vw 0px rgba(27, 31, 36, 0.78),
+      inset 25vw 0px 25vw 0px rgba(27, 31, 36, 0.8),
+      inset 15vw 0px 10vw 0px rgba(27, 31, 36, 1),
+      inset -27vw 0px 15vw 0px rgba(27, 31, 36, 0.45),
+      inset -24vw 0px 10vw 0px rgba(27, 31, 36, 0.65),
+      inset -19vw 0px 7vw 0px rgba(27, 31, 36, 0.8),
+      inset -15vw 0px 6vw 0px rgba(27, 31, 36, 1);
     box-shadow: inset 35vw 0px 35vw 0px rgba(27, 31, 36, 0.45),
       inset 33vw 0px 20vw 0px rgba(27, 31, 36, 0.6),
       inset 30vw 0px 25vw 0px rgba(27, 31, 36, 0.78),
@@ -20,6 +56,14 @@
       inset -24vw 0px 10vw 0px rgba(27, 31, 36, 0.65),
       inset -19vw 0px 7vw 0px rgba(27, 31, 36, 0.8),
       inset -15vw 0px 6vw 0px rgba(27, 31, 36, 1);
+    opacity: 0;
+    -webkit-transition: opacity 1s 1s;
+    -o-transition: opacity 1s 1s;
+    transition: opacity 1s 1s;
+  }
+
+  #home-background.show {
+    opacity: 0.8;
   }
 
   #hi {
@@ -49,6 +93,8 @@
     padding: 12px 18px;
     font-family: $font-stack;
     border-radius: 3px;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
     cursor: pointer;
 
@@ -60,6 +106,7 @@
 
 @media screen and (max-width: $mobile-screen) {
   #home-container {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding-top: 33vh;
     padding-left: 25px;
