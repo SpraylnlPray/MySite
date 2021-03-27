@@ -72,7 +72,7 @@ class Contact extends React.Component {
     const userId = process.env.REACT_APP_USER_ID;
 
     this.setState({ loading: true });
-
+    console.log(templateId);
     this.sendMessage(serviceId, userId, templateId, { ...inputs });
   }
 
