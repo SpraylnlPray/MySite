@@ -24,7 +24,6 @@ const Home = ({ handleClick, toName: name }) => {
   };
 
   const background = () => {
-    const width = window.screen.width;
     if (width <= 750) {
       return null;
     }
@@ -47,20 +46,29 @@ const Home = ({ handleClick, toName: name }) => {
   return (
     <div id='home-container'>
       <div id='home-main'>
-        <div id='hi'>Hi,</div>
+        <span className='inline-block-span scale-in-ver-top-first' id='hi'>
+          Hi,
+        </span>
         <div id='presentation'>
-          I&apos;m Daniel.
+          <span className='inline-block-span scale-in-ver-top-second'>
+            I&apos;m Daniel.
+          </span>
           <br />
-          A CS student
-          <br />
-          from Germany.
+          <span className='inline-block-span scale-in-ver-top-third'>
+            A CS student
+            <br />
+            from Germany.
+          </span>
         </div>
-        <div id='skills'>
-          JavaScript, TypeScript, Angular, React, GraphQL, <br /> Neo4j, C++,
-          C#, Unity
-        </div>
+        <span className='inline-block-span scale-in-center-one' id='skills'>
+          My Skills: JavaScript, TypeScript, Angular, <br /> React, GraphQL,
+          Neo4j, C++, C#, Unity
+        </span>
+        <br />
         <Link to='/contact' name='contact' onClick={() => handleClick(name)}>
-          <button id='touch-button'>Get in Touch</button>
+          <button className='scale-in-center-two' id='touch-button'>
+            Get in Touch
+          </button>
         </Link>
       </div>
       {background()}
