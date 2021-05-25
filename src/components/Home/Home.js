@@ -55,14 +55,14 @@ const Home = ({ handleClick, toName: name }) => {
           </span>
           <br />
           <span className='inline-block-span scale-in-ver-top-third'>
-            A CS student
+            A Junior Developer
             <br />
             from Germany.
           </span>
         </div>
         <span className='inline-block-span scale-in-center-one' id='skills'>
-          My Skills: JavaScript, TypeScript, Angular, <br /> React, GraphQL,
-          Neo4j, C++, C#, Unity
+          My Skills: TypeScript, Angular, C++, C#, <br />
+          JavaScript, React, Unity
         </span>
         <br />
         <Link to='/contact' name='contact' onClick={() => handleClick(name)}>
